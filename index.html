@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kit Direitos do Autista · 40 Pedidos Prontos</title>
+<meta name="description" content="40 pedidos prontos para o plano de saúde, a escola, o BPC e a carteirinha CIPTEA. É só preencher e enviar.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;900&family=Archivo+Black&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<!-- ===== CONFIG: links da Wiapy e Pixel ===== -->
+<script>
+window.CFG={
+  checkoutBasico:"#WIAPY_BASICO",     // <- colar o link do checkout Wiapy do Plano Básico (R$ 17,90)
+  checkoutCompleto:"#WIAPY_COMPLETO", // <- colar o link do checkout Wiapy do Plano Completo (R$ 27,90)
+  checkoutCompletoPopup:"#WIAPY_COMPLETO_2590", // <- colar o link do checkout Wiapy do Completo do pop-up (R$ 25,90)
+  pixel:"1038495935667524"            // Pixel da Meta (mesmo do NeuroFoco)
+};
+</script>
+<!-- ===== RASTREAMENTO META: Pixel + fbclid/_fbc/_fbp + UTMs ===== -->
+<script>
+(function(){
+  function getCookie(n){var m=document.cookie.match('(?:^|; )'+n+'=([^;]*)');return m?decodeURIComponent(m[1]):null;}
+  function setCookie(n,v,d){document.cookie=n+'='+v+';path=/;max-age='+(d*86400)+';SameSite=Lax';}
+  function ls(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v);}catch(e){return null;}}
+  var qs=new URLSearchParams(location.search);
+  // fbclid -> cookie _fbc no formato da Meta (fb.1.<timestamp>.<fbclid>), guardado 90 dias
+  var fbclid=qs.get('fbclid');
+  if(fbclid){
+    var atual=getCookie('_fbc');
+    if(!atual||atual.split('.').slice(3).join('.')!==fbclid){setCookie('_fbc','fb.1.'+Date.now()+'.'+fbclid,90);}
+    ls('kda_fbclid',fbclid);
+  } else { fbclid=ls('kda_fbclid'); }
+  // UTMs e parâmetros de origem (primeiro clique fica guardado para a sessão de compra)
+  var chaves=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','utm_id','src','sck','xcod'],utm={};
+  chaves.forEach(function(k){var v=qs.get(k);if(v)utm[k]=v;});
+  if(Object.keys(utm).length){ls('kda_utm',JSON.stringify(utm));}else{try{utm=JSON.parse(ls('kda_utm')||'{}');}catch(e){utm={};}}
+  window.KDA={utm:utm,fbclid:fbclid,cookie:getCookie,
+    eid:function(n){return n+'.'+Date.now()+'.'+Math.random().toString(36).slice(2,10);},
+    produto:{content_name:'Kit Direitos do Autista',content_category:'Autismo / Direitos',content_type:'product',currency:'BRL'}};
+  if(!CFG.pixel) return;
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init',CFG.pixel);
+  fbq('track','PageView',{},{eventID:KDA.eid('pv')});
+  fbq('track','ViewContent',Object.assign({content_ids:['kit-direitos-autista'],value:17.90},KDA.produto),{eventID:KDA.eid('vc')});
+})();
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1038495935667524&ev=PageView&noscript=1"/></noscript>
+<style>
+:root{
+  --creme:#fdfcf8;--branco:#ffffff;--azul:#006de2;--azul-esc:#0a3d7a;--vermelho:#ea3c3f;--teal:#008e8e;
+  --amarelo:#f6c919;--lima:#8ee000;--lima-esc:#072a00;--texto:#0b121a;--cinza:#4d5660;--linha:#e9e5da;
+  --raio:22px;--sombra:0 10px 30px rgba(11,18,26,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--creme);color:var(--texto);font-family:Archivo,Arial,Helvetica,sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+.wrap{width:100%;max-width:1100px;margin:0 auto;padding:0 18px}
+.narrow{max-width:820px}
+section{padding:64px 0}
+h1,h2,h3{font-family:"Archivo Black",Archivo,"Arial Black",Arial,sans-serif;line-height:1.12;letter-spacing:-.01em}
+h2{font-size:clamp(26px,4.4vw,40px);text-align:center;margin-bottom:18px}
+h3{font-size:20px}
+.sub{color:var(--cinza);text-align:center;max-width:720px;margin:0 auto 34px;font-size:18px}
+.c-azul{color:var(--azul)}.c-verm{color:var(--vermelho)}.c-teal{color:var(--teal)}
+.marca{background:linear-gradient(transparent 58%,rgba(246,201,25,.55) 58%);padding:0 4px}
+
+/* ---------- topo ---------- */
+.topbar{background:var(--vermelho);color:#fff;text-align:center;font-weight:800;font-size:14px;letter-spacing:.06em;padding:11px 14px;text-transform:uppercase;position:relative;overflow:hidden}
+.topbar span{display:inline-flex;align-items:center;gap:10px}
+.topbar .dot{width:9px;height:9px;border-radius:50%;background:#fff;animation:blink 1.2s infinite}
+.topbar:after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.25) 50%,transparent 70%);animation:shine 3.5s infinite}
+
+/* ---------- hero ---------- */
+.hero{padding:46px 0 60px;background:radial-gradient(1200px 500px at 50% -10%,rgba(0,109,226,.10),transparent 70%),var(--creme)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+.selo-pub{display:inline-block;background:rgba(0,142,142,.1);color:var(--teal);font-weight:800;font-size:13px;letter-spacing:.08em;text-transform:uppercase;padding:7px 14px;border-radius:99px;margin-bottom:16px}
+.hero h1{font-size:clamp(40px,6.6vw,68px);margin-bottom:14px}
+.hero h1 .k{color:var(--vermelho)}.hero h1 .d{color:var(--azul)}.hero h1 .a{color:var(--teal)}
+.hero .h2{font-family:Archivo,Arial,sans-serif;font-weight:800;font-size:clamp(20px,2.6vw,25px);line-height:1.3;margin-bottom:16px}
+.hero .h2 b{color:var(--azul)}
+.hero p.lead{color:var(--cinza);font-size:18px;margin-bottom:20px}
+.checks{list-style:none;display:grid;gap:10px;margin-bottom:26px}
+.checks li{display:flex;gap:12px;align-items:flex-start;font-weight:600}
+.checks li i{color:#fff;background:var(--teal);width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-size:12px;flex:0 0 24px;margin-top:2px}
+.hero-img{position:relative}
+.hero-img .float{animation:float 5s ease-in-out infinite}
+.hero-img img{border-radius:22px;box-shadow:0 18px 40px rgba(11,18,26,.12)}
+.hero-img:before{content:"";position:absolute;inset:8% 6%;background:radial-gradient(circle,rgba(246,201,25,.45),transparent 65%);filter:blur(20px);z-index:-1}
+.mini-garantia{display:flex;flex-wrap:wrap;gap:16px;margin-top:16px;color:var(--cinza);font-size:14px;font-weight:600}
+.mini-garantia i{color:var(--teal);margin-right:6px}
+
+/* ---------- botões ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--lima);color:var(--lima-esc);font-family:"Archivo Black",Archivo,Arial,sans-serif;font-size:clamp(16px,2.2vw,19px);text-transform:uppercase;letter-spacing:.02em;text-decoration:none;padding:20px 34px;border-radius:var(--raio);box-shadow:0 8px 0 #5fa000,0 14px 30px rgba(142,224,0,.35);transition:transform .15s,box-shadow .15s;animation:pulse-soft 2s infinite ease-in-out;position:relative;overflow:hidden;text-align:center;max-width:100%}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(5px);box-shadow:0 3px 0 #5fa000}
+.btn:after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);animation:sweep 2.8s infinite}
+.btn.full{width:100%}
+.btn.sec{background:#fff;color:var(--azul);border:3px solid var(--azul);box-shadow:0 6px 0 var(--azul-esc);animation:none}
+.cta{text-align:center;margin-top:34px}
+
+.seg{display:flex;flex-direction:column;align-items:center;gap:12px;margin-top:18px}
+.seg-pill{display:inline-flex;align-items:center;gap:9px;background:#fff;border:1px solid var(--linha);box-shadow:0 4px 14px rgba(11,18,26,.06);padding:10px 20px;border-radius:99px;font-weight:900;font-size:14px;letter-spacing:.05em;text-transform:uppercase;color:var(--texto)}
+.seg-pill i{color:var(--teal)}
+.seg p{display:flex;gap:10px;max-width:520px;color:var(--cinza);font-size:15px;line-height:1.55;text-align:left}
+.seg p i{color:var(--azul);margin-top:4px}
+.seg p b{color:var(--texto)}
+.cta-h .seg{align-items:flex-start}
+.seg-card{margin-top:14px}.seg-card .seg-pill{font-size:12px;padding:8px 14px}.seg-card p{font-size:13.5px}
+.plat,.seg p b.plat{color:#00a650}
+@media (max-width:600px){.cta-h .seg{align-items:center}.seg-pill{font-size:12.5px}}
+/* ---------- entrega ---------- */
+.entrega{background:var(--azul);color:#fff;padding:26px 0}
+.entrega h2{font-size:clamp(19px,2.8vw,26px);margin:0;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px}
+.entrega i{font-size:1.25em}
+.entrega .wa{color:#25d366;background:#fff;border-radius:50%;width:38px;height:38px;display:inline-grid;place-items:center}
+.entrega .em{color:var(--vermelho);background:#fff;border-radius:50%;width:38px;height:38px;display:inline-grid;place-items:center;font-size:1em}
+
+/* ---------- vitrine (slider) ---------- */
+.slider{position:relative}
+.track{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:8px 4px 22px;scrollbar-width:none}
+.track::-webkit-scrollbar{display:none}
+.slide{flex:0 0 calc((100% - 36px)/3);scroll-snap-align:start;background:#fff;border-radius:18px;box-shadow:var(--sombra);overflow:hidden;border:1px solid var(--linha)}
+.slide .cap{padding:12px 16px;font-weight:700;font-size:15px;border-top:1px solid var(--linha)}
+.slide .cap small{display:block;color:var(--teal);font-weight:800;font-size:12px;text-transform:uppercase;letter-spacing:.06em}
+.arw{position:absolute;top:42%;width:46px;height:46px;border-radius:50%;border:0;background:#fff;box-shadow:var(--sombra);color:var(--azul);font-size:18px;cursor:pointer;z-index:2;transition:transform .2s}
+.arw:hover{transform:scale(1.08)}
+.arw.l{left:-8px}.arw.r{right:-8px}
+.dots{display:flex;justify-content:center;gap:8px}
+.dots b{width:9px;height:9px;border-radius:50%;background:#cfd6de;transition:all .3s}
+.dots b.on{background:var(--azul);width:26px;border-radius:9px}
+
+/* ---------- características ---------- */
+.carac{background:#fff}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:var(--creme);border:1px solid var(--linha);border-radius:20px;padding:26px 20px;text-align:center;transition:transform .25s,box-shadow .25s}
+.card:hover{transform:translateY(-6px);box-shadow:var(--sombra)}
+.ico{width:64px;height:64px;border-radius:18px;display:grid;place-items:center;margin:0 auto 14px;font-size:26px;color:#fff}
+.i1{background:var(--azul)}.i2{background:var(--vermelho)}.i3{background:var(--teal)}.i4{background:var(--amarelo);color:var(--texto)}
+.card p{color:var(--cinza);font-size:15.5px;margin-top:6px}
+.nota{text-align:center;font-weight:800;color:var(--teal);margin-top:26px;font-size:18px}
+
+/* ---------- benefícios ---------- */
+.benef{background:linear-gradient(180deg,var(--creme),#eef5ff)}
+.lista-b{list-style:none;max-width:680px;margin:0 auto;display:grid;gap:12px}
+.lista-b li{background:#fff;border-radius:16px;padding:16px 18px;display:flex;gap:14px;align-items:center;font-weight:700;box-shadow:0 4px 14px rgba(11,18,26,.05);border-left:5px solid var(--teal)}
+.lista-b li i{color:var(--teal);font-size:20px}
+
+/* marquee */
+.marquee{overflow:hidden;margin-top:44px;-webkit-mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.mq{display:flex;gap:18px;width:max-content;animation:mq 34s linear infinite}
+.marquee:hover .mq{animation-play-state:paused}
+.mq img,.mq .ph{width:300px;height:220px;object-fit:cover;border-radius:18px;flex:0 0 300px}
+
+/* ---------- dor ---------- */
+.dor{background:var(--azul-esc);color:#fff;text-align:center;position:relative;overflow:hidden}
+.dor:before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:rgba(234,60,63,.22);filter:blur(60px);top:-200px;left:-120px}
+.dor:after{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:rgba(0,142,142,.25);filter:blur(60px);bottom:-240px;right:-120px}
+.dor .wrap{position:relative;z-index:1}
+.dor h2{max-width:860px;margin:0 auto 10px}
+.dor p{opacity:.85;max-width:640px;margin:0 auto}
+
+/* ---------- ideal ---------- */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.ideal .it{background:#fff;border-radius:20px;padding:24px;box-shadow:var(--sombra);display:flex;gap:14px;align-items:flex-start;transition:transform .25s}
+.ideal .it:hover{transform:translateY(-5px)}
+.ideal .it i{flex:0 0 34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--lima);color:var(--lima-esc)}
+.ideal .it p{color:var(--cinza);font-size:15.5px;margin-top:6px}
+
+/* ---------- recebe ---------- */
+.recebe{background:#fff}
+.tag{display:inline-block;background:var(--vermelho);color:#fff;font-family:"Archivo Black",Arial,sans-serif;font-size:15px;padding:8px 18px;border-radius:99px;letter-spacing:.05em}
+.recebe-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center;margin-top:10px}
+.recebe-grid img{border-radius:22px;box-shadow:0 18px 40px rgba(11,18,26,.12)}
+.pastas{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:18px}
+.pasta{border-radius:16px;padding:16px;color:#fff}
+.pasta b{font-family:"Archivo Black",Arial,sans-serif;font-size:30px;display:block;line-height:1}
+.pasta span{font-weight:700;font-size:14.5px}
+.p1{background:var(--azul)}.p2{background:var(--vermelho)}.p3{background:var(--teal)}.p4{background:var(--amarelo);color:var(--texto)}
+.lista-r{list-style:none;display:grid;gap:9px}
+.lista-r li{display:flex;gap:10px;font-weight:600}
+.lista-r li i{color:var(--teal);margin-top:4px}
+
+/* ---------- bônus ---------- */
+.bonus{background:linear-gradient(180deg,#fff8dc,var(--creme))}
+.bonus-head{text-align:center;margin-bottom:34px}
+.bonus-head .k1{font-family:"Archivo Black",Arial,sans-serif;color:var(--vermelho);font-size:clamp(20px,3vw,28px)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.bn{background:#fff;border-radius:22px;overflow:hidden;box-shadow:var(--sombra);display:flex;flex-direction:column;transition:transform .25s}
+.bn:hover{transform:translateY(-6px)}
+.bn .num{background:var(--azul);color:#fff;font-family:"Archivo Black",Arial,sans-serif;text-align:center;padding:10px;letter-spacing:.1em}
+.bn:nth-child(2) .num{background:var(--teal)}.bn:nth-child(3) .num{background:var(--vermelho)}.bn:nth-child(4) .num{background:var(--amarelo);color:var(--texto)}
+.bn .bimg img,.bn .bimg .ph{width:100%;aspect-ratio:16/10;object-fit:cover}
+.bn .bd{padding:20px 22px 24px;flex:1;display:flex;flex-direction:column}
+.bn .bd p{color:var(--cinza);margin:6px 0 10px}
+.bn ul{list-style:none;display:grid;gap:6px;margin-bottom:16px}
+.bn ul li{display:flex;gap:9px;font-weight:600;font-size:15.5px}
+.bn ul li i{color:var(--teal);margin-top:4px}
+.valor{margin-top:auto;font-family:"Archivo Black",Arial,sans-serif;text-align:center;background:rgba(142,224,0,.18);border-radius:12px;padding:10px}
+.valor s{color:var(--vermelho);margin-right:6px}
+
+/* ---------- planos ---------- */
+.planos{background:var(--azul-esc);color:#fff}
+.planos h2{color:#fff}
+.planos .lanc{text-align:center;margin-bottom:30px}
+.planos .lanc span{background:var(--amarelo);color:var(--texto);font-weight:900;padding:8px 18px;border-radius:99px;font-size:14px;letter-spacing:.06em;text-transform:uppercase}
+.pgrid{display:grid;grid-template-columns:1fr 1.12fr;gap:26px;align-items:center;max-width:920px;margin:0 auto}
+.plano{background:#fff;color:var(--texto);border-radius:26px;padding:30px 26px;text-align:center;position:relative}
+.plano h3{font-size:24px;margin-bottom:12px}
+.plano .pimg img,.plano .pimg .ph{width:100%;max-width:300px;margin:0 auto 16px;aspect-ratio:4/3;object-fit:contain}
+.plano ul{list-style:none;text-align:left;display:grid;gap:8px;margin:0 0 18px}
+.plano ul li{display:flex;gap:10px;font-weight:600;font-size:15.5px}
+.plano ul li i{color:var(--teal);margin-top:4px}
+.plano ul li.bon i{color:var(--vermelho)}
+.de{color:var(--cinza)}.de s{color:var(--vermelho)}
+.preco{font-family:"Archivo Black",Arial,sans-serif;font-size:58px;line-height:1;margin:6px 0;color:var(--azul)}
+.preco small{font-size:24px;vertical-align:top;margin-right:4px}
+.parc{color:var(--cinza);font-size:14.5px;margin-bottom:8px}
+.eco{display:inline-block;background:rgba(0,142,142,.12);color:var(--teal);font-weight:800;padding:6px 14px;border-radius:99px;font-size:14px;margin-bottom:18px}
+.plano.top{border:4px solid var(--lima);box-shadow:0 0 0 8px rgba(142,224,0,.18),0 30px 60px rgba(0,0,0,.35);transform:scale(1.02)}
+.ribbon{position:absolute;top:-18px;left:50%;transform:translateX(-50%);background:var(--vermelho);color:#fff;font-family:"Archivo Black",Arial,sans-serif;padding:8px 20px;border-radius:99px;font-size:14px;white-space:nowrap;animation:pulse-soft 1.6s infinite}
+.dobro{display:inline-block;background:var(--amarelo);color:var(--texto);font-weight:900;padding:5px 14px;border-radius:99px;font-size:14px;margin-bottom:12px}
+.pagto{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:14px;font-size:13px;color:var(--cinza);font-weight:700}
+.pagto span{display:inline-flex;align-items:center;gap:6px;background:var(--creme);border:1px solid var(--linha);padding:5px 10px;border-radius:8px}
+.seguro{text-align:center;margin-top:26px;opacity:.85;font-size:14.5px}
+
+/* ---------- pop-up do Básico (upsell para o Completo por R$ 25,90) ---------- */
+.pop{position:fixed;inset:0;z-index:90;background:rgba(11,18,26,.72);display:grid;place-items:center;padding:18px;animation:fadein .25s ease}
+.pop[hidden]{display:none}
+.pop-box{background:#fff;border-radius:26px;max-width:460px;width:100%;padding:34px 24px 24px;text-align:center;position:relative;display:flex;flex-direction:column;gap:12px;box-shadow:0 30px 80px rgba(0,0,0,.35);border:4px solid var(--lima);animation:popin .35s cubic-bezier(.2,1.3,.4,1)}
+.pop-x{position:absolute;top:8px;right:14px;background:none;border:0;font-size:30px;line-height:1;color:var(--cinza);cursor:pointer}
+.pop-tag{align-self:center;background:var(--vermelho);color:#fff;font-family:"Archivo Black",Arial,sans-serif;font-size:12.5px;letter-spacing:.06em;padding:7px 16px;border-radius:99px;animation:pulse-soft 1.6s infinite}
+.pop-box h3{font-size:26px;line-height:1.15}.pop-box h3 em{font-style:normal;color:var(--azul)}
+.pop-box p{color:var(--cinza);font-size:15.5px}.pop-box p b{color:var(--texto)}
+.pop-preco{font-family:"Archivo Black",Arial,sans-serif;font-size:50px;line-height:1;color:var(--azul)}
+.pop-preco s{font-size:20px;color:var(--vermelho);margin-right:6px}
+.pop-box .btn{width:100%;font-size:16px;padding:18px 14px}
+.pop-no{color:var(--cinza);font-weight:700;font-size:14px;text-decoration:underline;margin-top:2px}
+@keyframes popin{from{transform:scale(.85);opacity:0}to{transform:none;opacity:1}}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+/* ---------- âncora ---------- */
+.ancora{padding:40px 0;background:#fff}
+.ancora .box{display:flex;gap:18px;align-items:center;justify-content:center;max-width:820px;margin:0 auto;background:var(--creme);border:2px dashed var(--teal);border-radius:22px;padding:24px}
+.ancora i{font-size:34px;color:var(--teal)}
+.ancora h3{font-size:clamp(19px,2.6vw,24px)}
+.ancora p{color:var(--cinza)}
+
+/* ---------- garantia ---------- */
+.garantia .gbox{display:grid;grid-template-columns:260px 1fr;gap:40px;align-items:center;background:#fff;border-radius:28px;padding:40px;box-shadow:var(--sombra)}
+.garantia .selo svg{width:100%;height:auto;animation:spin-soft 14s ease-in-out infinite}
+.garantia h2{text-align:left}
+.garantia p{color:var(--cinza);margin-bottom:12px}
+.garantia p b{color:var(--texto)}
+
+/* ---------- acesso ---------- */
+.passos{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:p}
+.passo{background:#fff;border-radius:20px;padding:26px 20px;text-align:center;box-shadow:var(--sombra);position:relative}
+.passo:before{counter-increment:p;content:counter(p);position:absolute;top:-14px;left:50%;transform:translateX(-50%);width:30px;height:30px;border-radius:50%;background:var(--vermelho);color:#fff;font-weight:900;display:grid;place-items:center;font-size:15px}
+.passo i{font-size:30px;color:var(--azul);margin:8px 0 12px}
+.passo p{color:var(--cinza);font-size:15px;margin-top:6px}
+
+/* ---------- FAQ ---------- */
+.faq details{background:#fff;border-radius:16px;margin-bottom:12px;box-shadow:0 4px 14px rgba(11,18,26,.05);overflow:hidden;border:1px solid var(--linha)}
+.faq summary{list-style:none;cursor:pointer;padding:18px 54px 18px 20px;font-weight:800;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);width:28px;height:28px;border-radius:50%;background:var(--azul);color:#fff;display:grid;place-items:center;font-size:20px;transition:transform .3s}
+.faq details[open] summary:after{transform:translateY(-50%) rotate(45deg);background:var(--vermelho)}
+.faq .ans{padding:0 20px 18px;color:var(--cinza)}
+
+/* ---------- rodapé ---------- */
+footer{background:var(--texto);color:#aab3bd;font-size:13px;text-align:center;padding:34px 0}
+footer p{max-width:820px;margin:0 auto 8px}
+
+/* ---------- placeholder de imagem ---------- */
+.ph{display:grid;place-items:center;text-align:center;background:repeating-linear-gradient(45deg,#eef3f9,#eef3f9 12px,#e4ebf4 12px,#e4ebf4 24px);color:var(--azul);font-weight:800;font-size:14px;padding:16px;border-radius:inherit;min-height:160px;width:100%}
+.ph small{display:block;color:var(--cinza);font-weight:600}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}
+
+/* ---------- barra fixa celular ---------- */
+.sticky{position:fixed;left:0;right:0;bottom:0;background:rgba(253,252,248,.96);backdrop-filter:blur(8px);border-top:1px solid var(--linha);padding:10px 14px;display:none;z-index:50;transform:translateY(110%);transition:transform .35s}
+.sticky.show{transform:none}
+.sticky .btn{width:100%;padding:15px 18px;font-size:15px;animation:none}
+
+/* ---------- animações ---------- */
+@keyframes pulse-soft{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+@keyframes shine{0%{transform:translateX(-100%)}60%,100%{transform:translateX(100%)}}
+@keyframes sweep{0%{left:-60%}55%,100%{left:130%}}
+@keyframes spin-soft{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+
+/* ---------- responsivo ---------- */
+@media (max-width:900px){
+  .hero-grid,.recebe-grid,.pgrid{grid-template-columns:1fr}
+  .hero-img{order:-1;max-width:480px;margin:0 auto}
+  .grid4,.passos{grid-template-columns:1fr 1fr}
+  .grid3{grid-template-columns:1fr 1fr}
+  .slide{flex-basis:calc((100% - 18px)/2)}
+  .plano.top{transform:none;order:-1}
+  .garantia .gbox{grid-template-columns:1fr;text-align:center;padding:30px 22px}
+  .garantia .selo{max-width:220px;margin:0 auto}
+  .garantia h2{text-align:center}
+}
+@media (max-width:600px){
+  body{font-size:16px}
+  section{padding:48px 0}
+  .wrap{padding:0 16px}
+  .hero{padding-top:28px}
+  .hero h1,.hero .h2,.hero p.lead,.hero .selo-pub-w{text-align:center}
+  .hero .cta-h{text-align:center}
+  .grid4,.grid3,.grid2,.passos{grid-template-columns:1fr}
+  .passos{gap:26px}
+  .slide{flex-basis:84%}
+  .arw{display:none}
+  .btn{padding:18px 20px;width:100%}
+  .mq img,.mq .ph{width:230px;height:170px;flex-basis:230px}
+  .ancora .box{flex-direction:column;text-align:center}
+  .preco{font-size:50px}
+  .sticky{display:block}
+  body{padding-bottom:76px}
+}
+</style>
+</head>
+<body>
+
+<!-- 1 · FAIXA DE TOPO -->
+<div class="topbar"><span><i class="dot"></i>Preço de lançamento · para pais de crianças com autismo</span></div>
+
+<!-- 2 · HERO -->
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="selo-pub-w"><span class="selo-pub"><i class="fa-solid fa-puzzle-piece"></i> Para mães e pais de crianças autistas</span></div>
+      <h1 class="rv"><span class="k">Kit</span> <span class="d">Direitos</span> do <span class="a">Autista</span></h1>
+      <p class="h2 rv d1"><b>40 pedidos prontos</b> para o plano de saúde, a escola, o BPC e a carteirinha CIPTEA. <span class="marca">É só preencher e enviar.</span></p>
+      <p class="lead rv d2">O plano negou a terapia? A escola diz que não tem apoio? Você não precisa escrever nada do zero: cada pedido já vem pronto, com a lei certa citada, para você colocar o nome do seu filho e enviar hoje.</p>
+      <ul class="checks rv d2">
+        <li><i class="fa-solid fa-check"></i>40 pedidos prontos, separados por situação</li>
+        <li><i class="fa-solid fa-check"></i>A lei de cada direito já citada no texto</li>
+        <li><i class="fa-solid fa-check"></i>Campos em destaque: é só preencher</li>
+        <li><i class="fa-solid fa-check"></i>Em Word e PDF: edite no celular ou imprima</li>
+        <li><i class="fa-solid fa-check"></i>Passo a passo de onde e como entregar cada um</li>
+      </ul>
+      <div class="cta-h rv d3"><a class="btn go" href="#planos">Quero meus pedidos prontos <i class="fa-solid fa-arrow-right"></i></a><div class="seg"><span class="seg-pill"><i class="fa-solid fa-lock"></i> <span>Compra 100% segura · <b class="plat">Wiapy</b></span></span><p><i class="fa-regular fa-envelope"></i><span>Pagamento processado pela <b class="plat">Wiapy</b>, no Pix ou no cartão. Assim que ele é aprovado, <b>a <span class="plat">Wiapy</span> envia o seu acesso para o seu e-mail</b>, com os pedidos em Word e PDF para usar na hora.</span></p></div></div>
+      <div class="mini-garantia"><span><i class="fa-solid fa-bolt"></i>Acesso imediato</span><span><i class="fa-solid fa-shield-heart"></i>30 dias de garantia</span><span><i class="fa-solid fa-lock"></i>Compra segura</span></div>
+    </div>
+    <div class="hero-img"><img class="float" src="assets/capa-kit.webp" alt="Mockup do Kit Direitos do Autista" data-ph="IMG 01 · capa-kit.webp · tablet + impressora + folhas (4:3)"></div>
+  </div>
+</header>
+
+<!-- 3 · ENTREGA -->
+<div class="entrega"><div class="wrap"><h2>Você recebe tudo na hora, direto no seu <span class="wa"><i class="fa-brands fa-whatsapp"></i></span> WhatsApp e no seu <span class="em"><i class="fa-solid fa-envelope"></i></span> e-mail</h2></div></div>
+
+<!-- 4 · VITRINE -->
+<section class="vitrine">
+  <div class="wrap">
+    <h2 class="rv">Veja alguns dos <span class="c-azul">pedidos</span> que você recebe</h2>
+    <p class="sub rv">Páginas reais do kit, prontas para preencher.</p>
+    <div class="slider rv" data-slider>
+      <button class="arw l" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+      <div class="track">
+        <div class="slide"><img src="assets/vitrine-01.webp" alt="Pedido de negativa por escrito ao plano" data-ph="IMG 02 · vitrine-01.webp"><div class="cap"><small>Plano de saúde</small>Pedido de negativa por escrito</div></div>
+        <div class="slide"><img src="assets/vitrine-02.webp" alt="Solicitação de profissional de apoio na escola" data-ph="IMG 03 · vitrine-02.webp"><div class="cap"><small>Escola</small>Solicitação de profissional de apoio</div></div>
+        <div class="slide"><img src="assets/vitrine-03.webp" alt="Pedido de PEI" data-ph="IMG 04 · vitrine-03.webp"><div class="cap"><small>Escola</small>Pedido de PEI</div></div>
+        <div class="slide"><img src="assets/vitrine-04.webp" alt="Recurso do BPC" data-ph="IMG 05 · vitrine-04.webp"><div class="cap"><small>BPC / INSS</small>Recurso do BPC</div></div>
+        <div class="slide"><img src="assets/vitrine-05.webp" alt="Solicitação da CIPTEA" data-ph="IMG 06 · vitrine-05.webp"><div class="cap"><small>Outros direitos</small>Solicitação da carteirinha CIPTEA</div></div>
+        <div class="slide"><img src="assets/vitrine-06.webp" alt="Reclamação na ANS" data-ph="IMG 07 · vitrine-06.webp"><div class="cap"><small>Plano de saúde</small>Roteiro da reclamação na ANS</div></div>
+      </div>
+      <button class="arw r" aria-label="Próximo"><i class="fa-solid fa-chevron-right"></i></button>
+      <div class="dots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 · QUATRO CARACTERÍSTICAS -->
+<section class="carac">
+  <div class="wrap">
+    <h2 class="rv">Os pedidos do Kit Direitos do Autista são:</h2>
+    <div class="grid4" style="margin-top:30px">
+      <div class="card rv"><div class="ico i1"><i class="fa-solid fa-file-signature"></i></div><h3>Prontos para enviar</h3><p>O texto já está escrito. Você só preenche os dados.</p></div>
+      <div class="card rv d1"><div class="ico i2"><i class="fa-solid fa-scale-balanced"></i></div><h3>Com a lei citada</h3><p>Cada pedido mostra o artigo que garante aquele direito.</p></div>
+      <div class="card rv d2"><div class="ico i3"><i class="fa-solid fa-folder-tree"></i></div><h3>Organizados por situação</h3><p>Plano, escola, INSS e documentos, cada um na sua pasta.</p></div>
+      <div class="card rv d3"><div class="ico i4"><i class="fa-solid fa-route"></i></div><h3>Com guia de entrega</h3><p>Onde protocolar, o prazo de resposta e o que fazer se negarem.</p></div>
+    </div>
+    <p class="nota rv">Pedidos prontos para usar hoje.</p>
+    <div class="cta rv"><a class="btn go" href="#planos">Quero o Kit Direitos do Autista</a></div>
+  </div>
+</section>
+
+<!-- 6 · BENEFÍCIOS -->
+<section class="benef">
+  <div class="wrap">
+    <h2 class="rv">Com o kit, você para de pesquisar e começa a <span class="c-azul">pedir por escrito</span> o que é direito do seu filho</h2>
+    <ul class="lista-b" style="margin-top:30px">
+      <li class="rv"><i class="fa-solid fa-circle-check"></i>Para de perder noites procurando modelo na internet</li>
+      <li class="rv d1"><i class="fa-solid fa-circle-check"></i>Pede por escrito e com protocolo, em vez de só conversar no balcão</li>
+      <li class="rv d1"><i class="fa-solid fa-circle-check"></i>Mostra ao plano e à escola que conhece a lei</li>
+      <li class="rv d2"><i class="fa-solid fa-circle-check"></i>Não esquece nenhum direito: está tudo numa lista só</li>
+      <li class="rv d2"><i class="fa-solid fa-circle-check"></i>Economiza a consulta só para "escrever um pedido"</li>
+    </ul>
+    <div class="cta rv"><a class="btn go" href="#planos">Quero acessar agora e usar hoje</a></div>
+  </div>
+  <div class="marquee"><div class="mq">
+    <img src="assets/uso-01.webp" alt="" data-ph="IMG 08 · uso-01.webp"><img src="assets/uso-02.webp" alt="" data-ph="IMG 09 · uso-02.webp"><img src="assets/uso-03.webp" alt="" data-ph="IMG 10 · uso-03.webp"><img src="assets/uso-04.webp" alt="" data-ph="IMG 11 · uso-04.webp"><img src="assets/uso-05.webp" alt="" data-ph="IMG 12 · uso-05.webp">
+  </div></div>
+</section>
+
+<!-- 7 · PERGUNTA DE DOR -->
+<section class="dor">
+  <div class="wrap">
+    <h2 class="rv">Quantas semanas de terapia o seu filho já perdeu esperando uma resposta do plano?</h2>
+    <p class="rv d1">Cada semana parada pesa. Com o pedido certo em mãos, você age hoje.</p>
+    <div class="cta rv d2"><a class="btn go" href="#planos">Quero meus pedidos prontos</a></div>
+  </div>
+</section>
+
+<!-- 8 · IDEAL PARA VOCÊ -->
+<section class="ideal">
+  <div class="wrap">
+    <h2 class="rv">Este kit é para você que deseja</h2>
+    <div class="grid3" style="margin-top:30px">
+      <div class="it rv"><i class="fa-solid fa-check"></i><div><h3>Conseguir a resposta do plano por escrito</h3><p>Pedir a negativa formal e saber o próximo passo se ela vier.</p></div></div>
+      <div class="it rv d1"><i class="fa-solid fa-check"></i><div><h3>Pedir o apoio do seu filho na escola</h3><p>Profissional de apoio, PEI e adaptações, com a lei citada.</p></div></div>
+      <div class="it rv d2"><i class="fa-solid fa-check"></i><div><h3>Dar entrada no BPC sem se perder</h3><p>A lista dos documentos e o pedido de recurso se for indeferido.</p></div></div>
+      <div class="it rv"><i class="fa-solid fa-check"></i><div><h3>Tirar a carteirinha CIPTEA</h3><p>O pedido pronto e onde fazer, para usar a prioridade.</p></div></div>
+      <div class="it rv d1"><i class="fa-solid fa-check"></i><div><h3>Parar de explicar tudo de novo</h3><p>Uma ficha do seu filho pronta para a escola e os terapeutas.</p></div></div>
+      <div class="it rv d2"><i class="fa-solid fa-check"></i><div><h3>Agir hoje, sem esperar</h3><p>Abrir o arquivo, preencher e enviar.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 9 · TUDO O QUE VOCÊ VAI RECEBER -->
+<section class="recebe">
+  <div class="wrap">
+    <h2 class="rv">Tudo o que você vai receber</h2>
+    <p style="text-align:center;margin-bottom:10px" class="rv"><span class="tag">⚡ ACESSO IMEDIATO</span></p>
+    <p class="sub rv">Tudo foi organizado para ser simples: você escolhe a situação e já tem o pedido na mão.</p>
+    <div class="recebe-grid">
+      <div class="rv"><img src="assets/capa-kit.webp" alt="Kit Direitos do Autista" data-ph="IMG 01 · capa-kit.webp (repete)"></div>
+      <div>
+        <div class="pastas rv">
+          <div class="pasta p1"><b>12</b><span>pedidos para o plano de saúde</span></div>
+          <div class="pasta p2"><b>12</b><span>pedidos para a escola</span></div>
+          <div class="pasta p3"><b>6</b><span>documentos para o BPC / INSS</span></div>
+          <div class="pasta p4"><b>10</b><span>pedidos de outros direitos</span></div>
+        </div>
+        <ul class="lista-r rv d1">
+          <li><i class="fa-solid fa-check"></i>A lei de cada direito citada no pedido</li>
+          <li><i class="fa-solid fa-check"></i>Campos em destaque para preencher</li>
+          <li><i class="fa-solid fa-check"></i>Arquivos em Word (editáveis) e PDF</li>
+          <li><i class="fa-solid fa-check"></i>Guia de entrega: onde protocolar e prazo de resposta</li>
+          <li><i class="fa-solid fa-check"></i>O que fazer se negarem (próximo pedido da sequência)</li>
+          <li><i class="fa-solid fa-check"></i>Ficha "Conheça meu filho" para a escola e os terapeutas</li>
+          <li><i class="fa-solid fa-check"></i>Controle de protocolos: o que pediu, quando e a resposta</li>
+          <li><i class="fa-solid fa-check"></i>Acesso vitalício, sem mensalidade</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 · BÔNUS -->
+<section class="bonus">
+  <div class="wrap">
+    <div class="bonus-head">
+      <p class="k1 rv">E NÃO PARA POR AÍ… TEM MAIS!</p>
+      <h2 class="rv d1">Você também vai receber 🔥 6 bônus exclusivos</h2>
+    </div>
+    <div class="grid2">
+      <div class="bn rv"><div class="num">BÔNUS #1</div><div class="bimg"><img src="assets/bonus-1.webp" alt="200 Pictogramas de Rotina" data-ph="IMG 13 · bonus-1.webp"></div><div class="bd"><h3>200 Pictogramas de Rotina para Imprimir</h3><p>A rotina na parede: a criança vê o que vem agora e o que vem depois.</p><ul><li><i class="fa-solid fa-check"></i>Manhã, banho, escola e hora de dormir</li><li><i class="fa-solid fa-check"></i>Quadro "Primeiro → Depois"</li><li><i class="fa-solid fa-check"></i>Sentimentos e pedidos rápidos</li></ul><div class="valor">Valor: <s>R$27</s> GRÁTIS</div></div></div>
+      <div class="bn rv d1"><div class="num">BÔNUS #2</div><div class="bimg"><img src="assets/bonus-2.webp" alt="Checklist dos Primeiros 30 Dias" data-ph="IMG 14 · bonus-2.webp"></div><div class="bd"><h3>Checklist dos Primeiros 30 Dias Depois do Laudo</h3><p>Uma folha com a ordem certa: o que pedir primeiro, depois e depois.</p><ul><li><i class="fa-solid fa-check"></i>Semana 1: documentos e plano</li><li><i class="fa-solid fa-check"></i>Semana 2: escola</li><li><i class="fa-solid fa-check"></i>Semanas 3 e 4: INSS e CIPTEA</li></ul><div class="valor">Valor: <s>R$27</s> GRÁTIS</div></div></div>
+      <div class="bn rv"><div class="num">BÔNUS #3</div><div class="bimg"><img src="assets/bonus-3.webp" alt="Pasta do Meu Filho" data-ph="IMG 15 · bonus-3.webp"></div><div class="bd"><h3>Pasta do Meu Filho (organizador para imprimir)</h3><p>Laudos, relatórios, receitas e protocolos num lugar só.</p><ul><li><i class="fa-solid fa-check"></i>Capas e divisórias</li><li><i class="fa-solid fa-check"></i>Folha de controle de consultas</li><li><i class="fa-solid fa-check"></i>Lista de terapeutas e contatos</li></ul><div class="valor">Valor: <s>R$27</s> GRÁTIS</div></div></div>
+      <div class="bn rv d1"><div class="num">BÔNUS #4</div><div class="bimg"><img src="assets/bonus-4.webp" alt="Frases Prontas para Reunião na Escola" data-ph="IMG 16 · bonus-4.webp"></div><div class="bd"><h3>Frases Prontas para Reunião na Escola</h3><p>O que dizer, e como, para pedir o que seu filho precisa sem briga.</p><ul><li><i class="fa-solid fa-check"></i>Abrir a reunião</li><li><i class="fa-solid fa-check"></i>Pedir adaptação</li><li><i class="fa-solid fa-check"></i>Registrar o combinado por escrito</li></ul><div class="valor">Valor: <s>R$27</s> GRÁTIS</div></div></div>
+      <div class="bn rv"><div class="num">BÔNUS #5</div><div class="bimg"><img src="assets/bonus-5.webp" alt="Controle dos 40 Pedidos: Planilha de Prazos e Protocolos" data-ph="IMG 19 · bonus-5.webp"></div><div class="bd"><h3>Controle dos 40 Pedidos: Planilha de Prazos e Protocolos</h3><p>Você anota o pedido e a planilha calcula até quando eles têm para responder.</p><ul><li><i class="fa-solid fa-check"></i>Prazo de cada pedido calculado sozinho</li><li><i class="fa-solid fa-check"></i>Fica vermelho quando é hora de cobrar</li><li><i class="fa-solid fa-check"></i>Mostra o próximo pedido do kit se negarem</li></ul><div class="valor">Valor: <s>R$27</s> GRÁTIS</div></div></div>
+      <div class="bn rv d1"><div class="num">BÔNUS #6</div><div class="bimg"><img src="assets/bonus-6.webp" alt="Pedido Extra: Cartas Prontas para Médico e Terapeutas" data-ph="IMG 20 · bonus-6.webp"></div><div class="bd"><h3>Pedido Extra: Cartas Prontas para Médico e Terapeutas</h3><p>O relatório certo deixa seus 40 pedidos mais fortes. Peça do jeito certo e confira antes de anexar.</p><ul><li><i class="fa-solid fa-check"></i>Relatório da terapeuta para a escola</li><li><i class="fa-solid fa-check"></i>Laudo atualizado e relatório de evolução</li><li><i class="fa-solid fa-check"></i>Checklist de conferência por pedido</li></ul><div class="valor">Valor: <s>R$27</s> GRÁTIS</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 11 · PLANOS -->
+<section class="planos" id="planos">
+  <div class="wrap">
+    <div class="lanc rv"><span>💙 Preço de lançamento</span></div>
+    <h2 class="rv">Escolha a opção ideal para você</h2>
+    <div class="pgrid" style="margin-top:44px">
+      <div class="plano rv">
+        <h3>Plano Básico</h3>
+        <div class="pimg"><img src="assets/basico.webp" alt="Plano Básico" data-ph="IMG 17 · basico.webp"></div>
+        <ul>
+          <li><i class="fa-solid fa-check"></i>Kit Direitos do Autista: 40 pedidos prontos</li>
+          <li><i class="fa-solid fa-check"></i>Acesso imediato pela área de membros</li>
+        </ul>
+        <p class="de">de <s>R$ 27,90</s> por:</p>
+        <div class="preco"><small>R$</small>17,90</div>
+        <p class="parc">ou parcelado no cartão</p>
+        <span class="eco">Você economiza R$ 10,00</span>
+        <a class="btn sec full" id="btn-basico" href="#">Quero somente o básico</a><div class="seg seg-card"><span class="seg-pill"><i class="fa-solid fa-lock"></i> <span>Compra 100% segura · <b class="plat">Wiapy</b></span></span><p><i class="fa-regular fa-envelope"></i><span>Pagamento processado pela <b class="plat">Wiapy</b>. Aprovado o pagamento, <b>o acesso chega no seu e-mail</b> na hora.</span></p></div>
+      </div>
+      <div class="plano top rv d1">
+        <div class="ribbon">⚡ MAIS VENDIDO</div>
+        <h3 style="margin-top:8px">Plano Completo</h3>
+        <span class="dobro">⚡ 2x mais conteúdo</span>
+        <div class="pimg"><img src="assets/completo.webp" alt="Plano Completo" data-ph="IMG 18 · completo.webp"></div>
+        <ul>
+          <li><i class="fa-solid fa-check"></i>Kit Direitos do Autista: 40 pedidos prontos</li>
+          <li><i class="fa-solid fa-check"></i>Guia de entrega + controle de protocolos</li>
+          <li class="bon"><i class="fa-solid fa-gift"></i>Bônus #1: 200 Pictogramas de Rotina</li>
+          <li class="bon"><i class="fa-solid fa-gift"></i>Bônus #2: Checklist dos Primeiros 30 Dias</li>
+          <li class="bon"><i class="fa-solid fa-gift"></i>Bônus #3: Pasta do Meu Filho</li>
+          <li class="bon"><i class="fa-solid fa-gift"></i>Bônus #4: Frases Prontas para Reunião na Escola</li>
+          <li class="bon"><i class="fa-solid fa-gift"></i>Bônus #5: Planilha de Prazos e Protocolos</li>
+          <li class="bon"><i class="fa-solid fa-gift"></i>Bônus #6: Cartas Prontas para Médico e Terapeutas</li>
+        </ul>
+        <p class="de">de <s>R$ 37,90</s> por:</p>
+        <div class="preco"><small>R$</small>27,90</div>
+        <p class="parc">ou parcelado no cartão</p>
+        <span class="eco">Você economiza R$ 10,00</span>
+        <a class="btn full ck" data-plano="completo" data-valor="27.90" href="#">Quero o plano completo</a>
+        <div class="pagto"><span><i class="fa-brands fa-pix"></i>Pix</span><span><i class="fa-solid fa-credit-card"></i>Cartão</span></div><div class="seg seg-card"><span class="seg-pill"><i class="fa-solid fa-lock"></i> <span>Compra 100% segura · <b class="plat">Wiapy</b></span></span><p><i class="fa-regular fa-envelope"></i><span>Pagamento processado pela <b class="plat">Wiapy</b>. Aprovado o pagamento, <b>o acesso chega no seu e-mail</b> na hora.</span></p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 · ÂNCORA -->
+<section class="ancora">
+  <div class="wrap"><div class="box rv"><i class="fa-solid fa-circle-check"></i><div><h3>Um único mês de terapia coberto pelo plano vale mais do que o kit inteiro.</h3><p>E os pedidos ficam com você para usar sempre que precisar.</p></div></div></div>
+</section>
+
+<!-- 13 · DEPOIMENTOS: oculto até ter depoimentos reais -->
+<!-- <section class="depo">…</section> -->
+
+<!-- 14 · GARANTIA -->
+<section class="garantia">
+  <div class="wrap narrow">
+    <div class="gbox rv">
+      <div class="selo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" role="img" aria-label="Garantia de 30 dias">
+<defs>
+ <linearGradient id="ouro" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff1a8"/><stop offset=".28" stop-color="#e9b949"/><stop offset=".55" stop-color="#b9821f"/><stop offset=".78" stop-color="#f3cf6a"/><stop offset="1" stop-color="#9c6a14"/></linearGradient>
+ <linearGradient id="ouro2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff4c2"/><stop offset=".45" stop-color="#f0c75a"/><stop offset="1" stop-color="#b07a18"/></linearGradient>
+ <radialGradient id="azul" cx=".5" cy=".42" r=".6"><stop offset="0" stop-color="#2b3b63"/><stop offset=".6" stop-color="#141d33"/><stop offset="1" stop-color="#0a1020"/></radialGradient>
+ <radialGradient id="raio" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ffffff" stop-opacity=".35"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></radialGradient>
+ <path id="arcoTopo" d="M103 300 A197 197 0 0 1 497 300"/>
+ <path id="arcoBase" d="M100 300 A200 200 0 0 0 500 300"/>
+ <filter id="sombra" x="-10%" y="-10%" width="120%" height="120%"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity=".28"/></filter>
+</defs>
+<g filter="url(#sombra)">
+ <polygon points="300.0,4.0 323.5,31.0 351.4,8.5 369.9,39.2 401.2,21.9 414.1,55.3 448.0,43.7 454.9,78.8 490.3,73.3 490.9,109.1 526.7,109.7 521.2,145.1 556.3,152.0 544.7,185.9 578.1,198.8 560.8,230.1 591.5,248.6 569.0,276.5 596.0,300.0 569.0,323.5 591.5,351.4 560.8,369.9 578.1,401.2 544.7,414.1 556.3,448.0 521.2,454.9 526.7,490.3 490.9,490.9 490.3,526.7 454.9,521.2 448.0,556.3 414.1,544.7 401.2,578.1 369.9,560.8 351.4,591.5 323.5,569.0 300.0,596.0 276.5,569.0 248.6,591.5 230.1,560.8 198.8,578.1 185.9,544.7 152.0,556.3 145.1,521.2 109.7,526.7 109.1,490.9 73.3,490.3 78.8,454.9 43.7,448.0 55.3,414.1 21.9,401.2 39.2,369.9 8.5,351.4 31.0,323.5 4.0,300.0 31.0,276.5 8.5,248.6 39.2,230.1 21.9,198.8 55.3,185.9 43.7,152.0 78.8,145.1 73.3,109.7 109.1,109.1 109.7,73.3 145.1,78.8 152.0,43.7 185.9,55.3 198.8,21.9 230.1,39.2 248.6,8.5 276.5,31.0" fill="url(#ouro)"/>
+ <circle cx="300" cy="300" r="258" fill="url(#ouro2)" stroke="#8c5e12" stroke-width="3"/>
+ <circle cx="300" cy="300" r="246" fill="none" stroke="#10182b" stroke-width="8"/>
+ <circle cx="300" cy="300" r="176" fill="#10182b"/>
+ <circle cx="300" cy="300" r="168" fill="url(#azul)"/>
+ <path d="M300 300 L469.9 293.5 L469.9 306.5Z" fill="url(#raio)"/><path d="M300 300 L468.8 320.1 L466.8 333.0Z" fill="url(#raio)"/><path d="M300 300 L463.6 346.3 L459.5 358.7Z" fill="url(#raio)"/><path d="M300 300 L454.3 371.3 L448.4 382.9Z" fill="url(#raio)"/><path d="M300 300 L441.3 394.6 L433.6 405.1Z" fill="url(#raio)"/><path d="M300 300 L424.7 415.5 L415.5 424.7Z" fill="url(#raio)"/><path d="M300 300 L405.1 433.6 L394.6 441.3Z" fill="url(#raio)"/><path d="M300 300 L382.9 448.4 L371.3 454.3Z" fill="url(#raio)"/><path d="M300 300 L358.7 459.5 L346.3 463.6Z" fill="url(#raio)"/><path d="M300 300 L333.0 466.8 L320.1 468.8Z" fill="url(#raio)"/><path d="M300 300 L306.5 469.9 L293.5 469.9Z" fill="url(#raio)"/><path d="M300 300 L279.9 468.8 L267.0 466.8Z" fill="url(#raio)"/><path d="M300 300 L253.7 463.6 L241.3 459.5Z" fill="url(#raio)"/><path d="M300 300 L228.7 454.3 L217.1 448.4Z" fill="url(#raio)"/><path d="M300 300 L205.4 441.3 L194.9 433.6Z" fill="url(#raio)"/><path d="M300 300 L184.5 424.7 L175.3 415.5Z" fill="url(#raio)"/><path d="M300 300 L166.4 405.1 L158.7 394.6Z" fill="url(#raio)"/><path d="M300 300 L151.6 382.9 L145.7 371.3Z" fill="url(#raio)"/><path d="M300 300 L140.5 358.7 L136.4 346.3Z" fill="url(#raio)"/><path d="M300 300 L133.2 333.0 L131.2 320.1Z" fill="url(#raio)"/><path d="M300 300 L130.1 306.5 L130.1 293.5Z" fill="url(#raio)"/><path d="M300 300 L131.2 279.9 L133.2 267.0Z" fill="url(#raio)"/><path d="M300 300 L136.4 253.7 L140.5 241.3Z" fill="url(#raio)"/><path d="M300 300 L145.7 228.7 L151.6 217.1Z" fill="url(#raio)"/><path d="M300 300 L158.7 205.4 L166.4 194.9Z" fill="url(#raio)"/><path d="M300 300 L175.3 184.5 L184.5 175.3Z" fill="url(#raio)"/><path d="M300 300 L194.9 166.4 L205.4 158.7Z" fill="url(#raio)"/><path d="M300 300 L217.1 151.6 L228.7 145.7Z" fill="url(#raio)"/><path d="M300 300 L241.3 140.5 L253.7 136.4Z" fill="url(#raio)"/><path d="M300 300 L267.0 133.2 L279.9 131.2Z" fill="url(#raio)"/><path d="M300 300 L293.5 130.1 L306.5 130.1Z" fill="url(#raio)"/><path d="M300 300 L320.1 131.2 L333.0 133.2Z" fill="url(#raio)"/><path d="M300 300 L346.3 136.4 L358.7 140.5Z" fill="url(#raio)"/><path d="M300 300 L371.3 145.7 L382.9 151.6Z" fill="url(#raio)"/><path d="M300 300 L394.6 158.7 L405.1 166.4Z" fill="url(#raio)"/><path d="M300 300 L415.5 175.3 L424.7 184.5Z" fill="url(#raio)"/><path d="M300 300 L433.6 194.9 L441.3 205.4Z" fill="url(#raio)"/><path d="M300 300 L448.4 217.1 L454.3 228.7Z" fill="url(#raio)"/><path d="M300 300 L459.5 241.3 L463.6 253.7Z" fill="url(#raio)"/><path d="M300 300 L466.8 267.0 L468.8 279.9Z" fill="url(#raio)"/>
+ <circle cx="300" cy="300" r="168" fill="none" stroke="url(#ouro)" stroke-width="6"/>
+ <circle cx="300" cy="300" r="180" fill="none" stroke="url(#ouro)" stroke-width="4"/>
+</g>
+<text font-family="Archivo Black,Archivo,Arial Black,Arial" font-weight="900" font-size="46" fill="#10182b" letter-spacing="5" text-anchor="middle"><textPath href="#arcoTopo" startOffset="50%">GARANTIA</textPath></text>
+<text font-family="Archivo Black,Archivo,Arial Black,Arial" font-weight="900" font-size="46" fill="#10182b" letter-spacing="5" text-anchor="middle" dominant-baseline="hanging"><textPath href="#arcoBase" startOffset="50%">GARANTIA</textPath></text>
+<path d="M103.0,251.0L105.7,258.3L113.5,258.6L107.4,263.4L109.5,270.9L103.0,266.6L96.5,270.9L98.6,263.4L92.5,258.6L100.3,258.3Z" fill="#10182b"/><path d="M96.0,289.0L98.7,296.3L106.5,296.6L100.4,301.4L102.5,308.9L96.0,304.6L89.5,308.9L91.6,301.4L85.5,296.6L93.3,296.3Z" fill="#10182b"/><path d="M103.0,327.0L105.7,334.3L113.5,334.6L107.4,339.4L109.5,346.9L103.0,342.6L96.5,346.9L98.6,339.4L92.5,334.6L100.3,334.3Z" fill="#10182b"/><path d="M497.0,251.0L499.7,258.3L507.5,258.6L501.4,263.4L503.5,270.9L497.0,266.6L490.5,270.9L492.6,263.4L486.5,258.6L494.3,258.3Z" fill="#10182b"/><path d="M504.0,289.0L506.7,296.3L514.5,296.6L508.4,301.4L510.5,308.9L504.0,304.6L497.5,308.9L499.6,301.4L493.5,296.6L501.3,296.3Z" fill="#10182b"/><path d="M497.0,327.0L499.7,334.3L507.5,334.6L501.4,339.4L503.5,346.9L497.0,342.6L490.5,346.9L492.6,339.4L486.5,334.6L494.3,334.3Z" fill="#10182b"/>
+<g transform="translate(300 0) scale(.78 1) translate(-300 0)"><text x="300" y="372" text-anchor="middle" font-family="Archivo,Arial Black,Arial" font-weight="900" font-size="190" fill="url(#ouro2)" stroke="#7a4f0e" stroke-width="2">30</text></g>
+<text x="300" y="438" text-anchor="middle" font-family="Archivo,Arial Black,Arial" font-weight="900" font-size="54" fill="url(#ouro2)" letter-spacing="2">DIAS</text>
+</svg></div>
+      <div>
+        <h2>Você tem 30 dias de garantia no Kit Direitos do Autista.</h2>
+        <p>Mesmo depois de baixar: se você achar que os pedidos não servem para a sua situação, ou simplesmente não quiser continuar, é só pedir o reembolso. <b>Sem burocracia e sem explicação.</b></p>
+        <p>Você não está comprando uma promessa. Está comprando <b>pedidos prontos, com a lei citada, para usar hoje.</b></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 15 · COMO É O ACESSO -->
+<section class="acesso" style="padding-top:20px">
+  <div class="wrap">
+    <h2 class="rv">Como é o acesso (passo a passo)</h2>
+    <div class="passos" style="margin-top:40px">
+      <div class="passo rv"><i class="fa-solid fa-cart-shopping"></i><h3>Conclua sua compra</h3><p>O acesso é liberado assim que o pagamento é aprovado.</p></div>
+      <div class="passo rv d1"><i class="fa-solid fa-id-card"></i><h3>Entre na área de membros</h3><p>Você recebe o login no e-mail e no WhatsApp.</p></div>
+      <div class="passo rv d2"><i class="fa-solid fa-download"></i><h3>Baixe os arquivos</h3><p>Pedidos em Word e PDF, separados por pasta.</p></div>
+      <div class="passo rv d3"><i class="fa-solid fa-paper-plane"></i><h3>Preencha e envie</h3><p>Coloque os dados do seu filho, imprima ou mande por e-mail e guarde o protocolo.</p></div>
+    </div>
+    <div class="cta rv"><a class="btn go" href="#planos">Quero meu acesso agora</a></div>
+  </div>
+</section>
+
+<!-- 16 · FAQ -->
+<section class="faq" style="background:#fff">
+  <div class="wrap narrow">
+    <h2 class="rv">Perguntas frequentes</h2>
+    <div style="margin-top:30px">
+      <details class="rv"><summary>O kit substitui um advogado?</summary><div class="ans">Não. Os pedidos servem para você pedir por escrito o que já é direito do seu filho. Se o pedido for negado e for preciso entrar na Justiça, aí sim você vai precisar de advogado ou da Defensoria Pública. E vai chegar lá com tudo documentado.</div></details>
+      <details class="rv"><summary>Serve para qualquer plano de saúde?</summary><div class="ans">Sim. As regras citadas valem para todos os planos regulados pela ANS.</div></details>
+      <details class="rv"><summary>Serve para escola particular e pública?</summary><div class="ans">Sim. Há pedidos para as duas.</div></details>
+      <details class="rv"><summary>Meu filho ainda não tem laudo. Serve?</summary><div class="ans">Alguns pedidos exigem o laudo ou o relatório médico. O checklist mostra o que você pode adiantar já.</div></details>
+      <details class="rv"><summary>Consigo editar pelo celular?</summary><div class="ans">Sim. O Word abre no celular, e o PDF também dá para preencher e imprimir.</div></details>
+      <details class="rv"><summary>As leis estão atualizadas?</summary><div class="ans">Sim. Foram conferidas em novembro de 2026, e cada pedido cita a norma.</div></details>
+      <details class="rv"><summary>O acesso é imediato?</summary><div class="ans">Sim, logo depois da aprovação do pagamento.</div></details>
+      <details class="rv"><summary>É assinatura?</summary><div class="ans">Não. É pagamento único, com acesso vitalício.</div></details>
+      <details class="rv"><summary>Como funciona a garantia?</summary><div class="ans">Você tem 30 dias, mesmo depois de baixar. É só pedir o reembolso pela <b class="plat">Wiapy</b>, a plataforma de pagamento.</div></details>
+    </div>
+    <div class="cta rv"><a class="btn go" href="#planos">Quero o Kit Direitos do Autista</a><div class="seg"><span class="seg-pill"><i class="fa-solid fa-lock"></i> <span>Compra 100% segura · <b class="plat">Wiapy</b></span></span><p><i class="fa-regular fa-envelope"></i><span>Pagamento processado pela <b class="plat">Wiapy</b>, no Pix ou no cartão. Assim que ele é aprovado, <b>a <span class="plat">Wiapy</span> envia o seu acesso para o seu e-mail</b>, com os pedidos em Word e PDF para usar na hora.</span></p></div></div>
+  </div>
+</section>
+
+<!-- 17 · RODAPÉ -->
+<footer>
+  <div class="wrap">
+    <p>Este site não é afiliado ao Facebook™, Instagram™, Google™ ou qualquer outra plataforma mencionada.</p>
+    <p>O Kit Direitos do Autista é um material prático e organizado: 40 pedidos prontos, com a lei citada em cada um e o passo a passo de entrega, para você pedir por escrito, com segurança, o que já é direito do seu filho. É um material informativo e não substitui a orientação jurídica individual nos casos que precisarem ir à Justiça.</p>
+    <p>Todos os direitos sobre a obra "Kit Direitos do Autista" são reservados, nos termos da Lei nº 9.610/98.</p>
+    <p>Suporte: <a href="mailto:hubdigital.suporte@gmail.com" style="color:#fff;font-weight:700">hubdigital.suporte@gmail.com</a></p>
+  </div>
+</footer>
+
+<div class="pop" id="pop" role="dialog" aria-modal="true" aria-labelledby="pop-t" hidden>
+  <div class="pop-box">
+    <button class="pop-x" id="pop-x" aria-label="Fechar">×</button>
+    <span class="pop-tag">ESPERA! OFERTA SÓ NESTA TELA</span>
+    <h3 id="pop-t">Leve o <em>Completo</em> por <span style="white-space:nowrap">R$ 25,90</span></h3>
+    <p>Por só <b>R$ 8 a mais</b> que o Básico, você leva os 40 pedidos, o guia de entrega e os <b>6 bônus</b>, incluindo a Planilha de Prazos e Protocolos e as Cartas Prontas para Médico e Terapeutas.</p>
+    <div class="pop-preco"><s>R$ 27,90</s> R$ 25,90</div>
+    <a class="btn ck" data-plano="completo-popup" data-valor="25.90" href="#">Sim, quero o Completo por R$ 25,90</a>
+    <a class="pop-no ck" data-plano="basico" data-valor="17.90" href="#">Não, quero só o Básico por R$ 17,90</a>
+  </div>
+</div>
+
+<div class="sticky" id="sticky"><a class="btn go" href="#planos">Quero meus pedidos · a partir de R$ 17,90</a></div>
+
+<script>
+(function(){
+  // ===== RASTREAMENTO: eventos da página =====
+  function track(ev,dados,custom){ if(!window.fbq) return; fbq(custom?'trackCustom':'track',ev,dados||{},{eventID:KDA.eid(ev)}); }
+  var feitos={}; function umaVez(k,fn){ if(!feitos[k]){feitos[k]=1;fn();} }
+  // links de checkout com UTMs, fbclid, _fbc e _fbp repassados para a Wiapy
+  function ckUrl(base){
+    if(!base||base.charAt(0)==='#') return base;
+    try{
+      var u=new URL(base),p=Object.assign({},KDA.utm);
+      if(KDA.fbclid) p.fbclid=KDA.fbclid;
+      var fbc=KDA.cookie('_fbc'),fbp=KDA.cookie('_fbp');
+      if(fbc) p.fbc=fbc; if(fbp) p.fbp=fbp;
+      Object.keys(p).forEach(function(k){ if(!u.searchParams.has(k)) u.searchParams.set(k,p[k]); });
+      return u.toString();
+    }catch(e){ return base; }
+  }
+  document.querySelectorAll('.ck').forEach(function(a){
+    var base = {completo:CFG.checkoutCompleto,'completo-popup':CFG.checkoutCompletoPopup,basico:CFG.checkoutBasico}[a.dataset.plano];
+    a.href = ckUrl(base);
+    a.addEventListener('click',function(){
+      a.href = ckUrl(base); // atualiza com o _fbp/_fbc já gravados
+      var v=parseFloat(a.dataset.valor);
+      track('InitiateCheckout',Object.assign({},KDA.produto,{content_ids:['kit-direitos-autista-'+a.dataset.plano],value:v,num_items:1,plano:a.dataset.plano}));
+    });
+  });
+  // cliques nos botões que levam aos planos (qual seção gerou o clique)
+  document.querySelectorAll('a.go').forEach(function(a){
+    a.addEventListener('click',function(){
+      var sec=a.closest('section,header,div.sticky'); var onde=sec?(sec.id||sec.className.split(' ')[0]):'pagina';
+      track('CliqueCTA',{posicao:onde,texto:a.textContent.trim().slice(0,60)},true);
+    });
+  });
+  // chegou nos planos = intenção forte
+  var plSec=document.getElementById('planos');
+  if(plSec&&'IntersectionObserver' in window){
+    new IntersectionObserver(function(es,o){es.forEach(function(e){if(e.isIntersecting){umaVez('planos',function(){track('VerPlanos',Object.assign({},KDA.produto,{value:17.90}),true);});o.disconnect();}})},{threshold:.35}).observe(plSec);
+  }
+  // profundidade de rolagem
+  addEventListener('scroll',function(){
+    var h=document.documentElement,pct=(h.scrollTop+innerHeight)/h.scrollHeight*100;
+    [25,50,75,90].forEach(function(m){ if(pct>=m) umaVez('r'+m,function(){track('Rolagem',{percentual:m},true);}); });
+  },{passive:true});
+  // tempo na página
+  [30,60,120].forEach(function(t){ setTimeout(function(){ if(document.visibilityState==='visible') track('TempoNaPagina',{segundos:t},true); },t*1000); });
+  // dúvidas abertas no FAQ
+  document.querySelectorAll('.faq details').forEach(function(d){
+    d.addEventListener('toggle',function(){ if(d.open) umaVez('faq'+d.querySelector('summary').textContent,function(){ track('AbriuFAQ',{pergunta:d.querySelector('summary').textContent.trim()},true); }); });
+  });
+  // pop-up: o botão do Básico abre a oferta do Completo por R$ 25,90 antes do checkout
+  var pop=document.getElementById('pop');
+  function fechaPop(){ pop.hidden=true; }
+  document.getElementById('btn-basico').addEventListener('click',function(e){
+    e.preventDefault(); pop.hidden=false; pop.querySelector('.btn').focus();
+    track('PopupCompleto2590',Object.assign({},KDA.produto,{value:25.90}),true);
+  });
+  document.getElementById('pop-x').addEventListener('click',fechaPop);
+  pop.addEventListener('click',function(e){ if(e.target===pop) fechaPop(); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') fechaPop(); });
+  // placeholders das imagens que ainda não existem
+  function ph(img){
+    var d=document.createElement('div');d.className='ph';
+    d.style.cssText=img.getAttribute('style')||'';
+    var t=(img.dataset.ph||img.getAttribute('src')).split(' · ');
+    d.innerHTML='<div><i class="fa-regular fa-image" style="font-size:26px;margin-bottom:6px"></i><br>'+t[0]+'<small>'+(t.slice(1).join(' · '))+'</small></div>';
+    if(img.classList.contains('float'))d.classList.add('float'),d.style.minHeight="320px";
+    img.replaceWith(d);
+  }
+  document.querySelectorAll('img[data-ph]').forEach(function(img){
+    if(img.complete && img.naturalWidth===0) ph(img); else img.addEventListener('error',function(){ph(img)});
+  });
+  // marquee: duplica para loop contínuo
+  document.querySelectorAll('.mq').forEach(function(m){ m.innerHTML += m.innerHTML; });
+  // slider com setas, bolinhas e autoplay
+  document.querySelectorAll('[data-slider]').forEach(function(s){
+    var tr=s.querySelector('.track'),sl=tr.children,dots=s.querySelector('.dots'),i=0,timer;
+    for(var k=0;k<sl.length;k++){dots.appendChild(document.createElement('b'));}
+    function per(){return Math.max(1,Math.round(tr.clientWidth/sl[0].getBoundingClientRect().width));}
+    function go(n){var max=sl.length-per();i=n>max?0:(n<0?max:n);tr.scrollTo({left:sl[i].offsetLeft-tr.offsetLeft,behavior:'smooth'});}
+    function mark(){var x=tr.scrollLeft,best=0;for(var k=0;k<sl.length;k++){if(Math.abs(sl[k].offsetLeft-tr.offsetLeft-x)<Math.abs(sl[best].offsetLeft-tr.offsetLeft-x))best=k;}i=best;[].forEach.call(dots.children,function(d,k){d.classList.toggle('on',k===best)});}
+    tr.addEventListener('scroll',function(){clearTimeout(tr._t);tr._t=setTimeout(mark,80)});
+    s.querySelector('.l').onclick=function(){go(i-1);reset()};
+    s.querySelector('.r').onclick=function(){go(i+1);reset()};
+    function reset(){clearInterval(timer);timer=setInterval(function(){go(i+1)},5000);}
+    s.addEventListener('mouseenter',function(){clearInterval(timer)});s.addEventListener('mouseleave',reset);
+    mark();reset();
+  });
+  // reveal ao rolar
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+  document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+  // barra fixa no celular depois do hero
+  var st=document.getElementById('sticky'),hero=document.querySelector('.hero'),pl=document.getElementById('planos');
+  function chk(){var h=hero.getBoundingClientRect().bottom<0,p=pl.getBoundingClientRect();var inPl=p.top<innerHeight&&p.bottom>0;st.classList.toggle('show',h&&!inPl);}
+  addEventListener('scroll',chk,{passive:true});chk();
+  // FAQ: abre um por vez
+  document.querySelectorAll('.faq details').forEach(function(d){d.addEventListener('toggle',function(){if(d.open)document.querySelectorAll('.faq details').forEach(function(o){if(o!==d)o.open=false})})});
+})();
+</script>
+</body>
+</html>
