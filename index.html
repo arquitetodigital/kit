@@ -11,9 +11,9 @@
 <!-- ===== CONFIG: links da Wiapy e Pixel ===== -->
 <script>
 window.CFG={
-  checkoutBasico:"#WIAPY_BASICO",     // <- colar o link do checkout Wiapy do Plano Básico (R$ 17,90)
-  checkoutCompleto:"#WIAPY_COMPLETO", // <- colar o link do checkout Wiapy do Plano Completo (R$ 27,90)
-  checkoutCompletoPopup:"#WIAPY_COMPLETO_2590", // <- colar o link do checkout Wiapy do Completo do pop-up (R$ 25,90)
+  checkoutBasico:"https://pay.wiapy.com/6b04f61866e6a24aa85ccbaa",     // Plano Básico (R$ 17,90)
+  checkoutCompleto:"https://pay.wiapy.com/_z9_ix_Q2muv", // Plano Completo (R$ 27,90)
+  checkoutCompletoPopup:"https://pay.wiapy.com/6b04f6d8f0d7875a7df868f1", // Completo do pop-up (R$ 25,90)
   pixel:"1038495935667524"            // Pixel da Meta (mesmo do NeuroFoco)
 };
 </script>
@@ -655,8 +655,6 @@ footer p{max-width:820px;margin:0 auto 8px}
     a.href = ckUrl(base);
     a.addEventListener('click',function(){
       a.href = ckUrl(base); // atualiza com o _fbp/_fbc já gravados
-      var v=parseFloat(a.dataset.valor);
-      track('InitiateCheckout',Object.assign({},KDA.produto,{content_ids:['kit-direitos-autista-'+a.dataset.plano],value:v,num_items:1,plano:a.dataset.plano}));
     });
   });
   // cliques nos botões que levam aos planos (qual seção gerou o clique)
