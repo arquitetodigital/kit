@@ -8,7 +8,6 @@
 <meta name="description" content="40 pedidos prontos para o plano de saúde, a escola, o BPC e a carteirinha CIPTEA. É só preencher e enviar.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;900&family=Archivo+Black&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></noscript>
 <!-- ===== CONFIG: links da Wiapy e Pixel ===== -->
 <script>
 window.CFG={
@@ -317,7 +316,7 @@ footer p{max-width:820px;margin:0 auto 8px}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
 @keyframes shine{0%{transform:translateX(-100%)}60%,100%{transform:translateX(100%)}}
-@keyframes sweep{0%{left:-60%}55%,100%{left:130%}}
+@keyframes sweep{0%{transform:translateX(0) skewX(-20deg)}55%,100%{transform:translateX(475%) skewX(-20deg)}}
 @keyframes spin-soft{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 
@@ -362,9 +361,9 @@ footer p{max-width:820px;margin:0 auto 8px}
   .sticky{display:block}
   body{padding-bottom:76px}
 }
-</style>
+.fa-solid,.fa-regular,.fa-brands{display:inline-block;font-style:normal;line-height:1}.fai{height:1em;vertical-align:-.125em;fill:currentColor;overflow:visible}</style>
 </head>
-<body>
+<body><svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="fa-brands-pix" viewBox="0 0 512 512"><path d="M242.4 292.5C247.8 287.1 257.1 287.1 262.5 292.5L339.5 369.5C353.7 383.7 372.6 391.5 392.6 391.5H407.7L310.6 488.6C280.3 518.1 231.1 518.1 200.8 488.6L103.3 391.2H112.6C132.6 391.2 151.5 383.4 165.7 369.2L242.4 292.5zM262.5 218.9C256.1 224.4 247.9 224.5 242.4 218.9L165.7 142.2C151.5 127.1 132.6 120.2 112.6 120.2H103.3L200.7 22.76C231.1-7.586 280.3-7.586 310.6 22.76L407.8 119.9H392.6C372.6 119.9 353.7 127.7 339.5 141.9L262.5 218.9zM112.6 142.7C126.4 142.7 139.1 148.3 149.7 158.1L226.4 234.8C233.6 241.1 243 245.6 252.5 245.6C261.9 245.6 271.3 241.1 278.5 234.8L355.5 157.8C365.3 148.1 378.8 142.5 392.6 142.5H430.3L488.6 200.8C518.9 231.1 518.9 280.3 488.6 310.6L430.3 368.9H392.6C378.8 368.9 365.3 363.3 355.5 353.5L278.5 276.5C264.6 262.6 240.3 262.6 226.4 276.6L149.7 353.2C139.1 363 126.4 368.6 112.6 368.6H80.78L22.76 310.6C-7.586 280.3-7.586 231.1 22.76 200.8L80.78 142.7H112.6z"/></symbol><symbol id="fa-brands-whatsapp" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></symbol><symbol id="fa-regular-envelope" viewBox="0 0 512 512"><path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/></symbol><symbol id="fa-regular-image" viewBox="0 0 512 512"><path d="M448 80c8.8 0 16 7.2 16 16V415.8l-5-6.5-136-176c-4.5-5.9-11.6-9.3-19-9.3s-14.4 3.4-19 9.3L202 340.7l-30.5-42.7C167 291.7 159.8 288 152 288s-15 3.7-19.5 10.1l-80 112L48 416.3l0-.3V96c0-8.8 7.2-16 16-16H448zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm80 192a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"/></symbol><symbol id="fa-solid-arrow-right" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></symbol><symbol id="fa-solid-bolt" viewBox="0 0 448 512"><path d="M349.4 44.6c5.9-13.7 1.5-29.7-10.6-38.5s-28.6-8-39.9 1.8l-256 224c-10 8.8-13.6 22.9-8.9 35.3S50.7 288 64 288H175.5L98.6 467.4c-5.9 13.7-1.5 29.7 10.6 38.5s28.6 8 39.9-1.8l256-224c10-8.8 13.6-22.9 8.9-35.3s-16.6-20.7-30-20.7H272.5L349.4 44.6z"/></symbol><symbol id="fa-solid-cart-shopping" viewBox="0 0 576 512"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></symbol><symbol id="fa-solid-check" viewBox="0 0 448 512"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/></symbol><symbol id="fa-solid-chevron-left" viewBox="0 0 320 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></symbol><symbol id="fa-solid-chevron-right" viewBox="0 0 320 512"><path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></symbol><symbol id="fa-solid-circle-check" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"/></symbol><symbol id="fa-solid-credit-card" viewBox="0 0 576 512"><path d="M64 32C28.7 32 0 60.7 0 96v32H576V96c0-35.3-28.7-64-64-64H64zM576 224H0V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V224zM112 352h64c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm112 16c0-8.8 7.2-16 16-16H368c8.8 0 16 7.2 16 16s-7.2 16-16 16H240c-8.8 0-16-7.2-16-16z"/></symbol><symbol id="fa-solid-download" viewBox="0 0 512 512"><path d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></symbol><symbol id="fa-solid-envelope" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></symbol><symbol id="fa-solid-file-medical" viewBox="0 0 384 512"><path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM160 240c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v48h48c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H224v48c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16V352H112c-8.8 0-16-7.2-16-16V304c0-8.8 7.2-16 16-16h48V240z"/></symbol><symbol id="fa-solid-file-signature" viewBox="0 0 576 512"><path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V428.7c-2.7 1.1-5.4 2-8.2 2.7l-60.1 15c-3 .7-6 1.2-9 1.4c-.9 .1-1.8 .2-2.7 .2H240c-6.1 0-11.6-3.4-14.3-8.8l-8.8-17.7c-1.7-3.4-5.1-5.5-8.8-5.5s-7.2 2.1-8.8 5.5l-8.8 17.7c-2.9 5.9-9.2 9.4-15.7 8.8s-12.1-5.1-13.9-11.3L144 381l-9.8 32.8c-6.1 20.3-24.8 34.2-46 34.2H80c-8.8 0-16-7.2-16-16s7.2-16 16-16h8.2c7.1 0 13.3-4.6 15.3-11.4l14.9-49.5c3.4-11.3 13.8-19.1 25.6-19.1s22.2 7.8 25.6 19.1l11.6 38.6c7.4-6.2 16.8-9.7 26.8-9.7c15.9 0 30.4 9 37.5 23.2l4.4 8.8h8.9c-3.1-8.8-3.7-18.4-1.4-27.8l15-60.1c2.8-11.3 8.6-21.5 16.8-29.7L384 203.6V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM549.8 139.7c-15.6-15.6-40.9-15.6-56.6 0l-29.4 29.4 71 71 29.4-29.4c15.6-15.6 15.6-40.9 0-56.6l-14.4-14.4zM311.9 321c-4.1 4.1-7 9.2-8.4 14.9l-15 60.1c-1.4 5.5 .2 11.2 4.2 15.2s9.7 5.6 15.2 4.2l60.1-15c5.6-1.4 10.8-4.3 14.9-8.4L512.1 262.7l-71-71L311.9 321z"/></symbol><symbol id="fa-solid-folder-open" viewBox="0 0 576 512"><path d="M88.7 223.8L0 375.8V96C0 60.7 28.7 32 64 32H181.5c17 0 33.3 6.7 45.3 18.7l26.5 26.5c12 12 28.3 18.7 45.3 18.7H416c35.3 0 64 28.7 64 64v32H144c-22.8 0-43.8 12.1-55.3 31.8zm27.6 16.1C122.1 230 132.6 224 144 224H544c11.5 0 22 6.1 27.7 16.1s5.7 22.2-.1 32.1l-112 192C453.9 474 443.4 480 432 480H32c-11.5 0-22-6.1-27.7-16.1s-5.7-22.2 .1-32.1l112-192z"/></symbol><symbol id="fa-solid-folder-tree" viewBox="0 0 576 512"><path d="M64 32C64 14.3 49.7 0 32 0S0 14.3 0 32v96V384c0 35.3 28.7 64 64 64H256V384H64V160H256V96H64V32zM288 192c0 17.7 14.3 32 32 32H544c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32H445.3c-8.5 0-16.6-3.4-22.6-9.4L409.4 9.4c-6-6-14.1-9.4-22.6-9.4H320c-17.7 0-32 14.3-32 32V192zm0 288c0 17.7 14.3 32 32 32H544c17.7 0 32-14.3 32-32V352c0-17.7-14.3-32-32-32H445.3c-8.5 0-16.6-3.4-22.6-9.4l-13.3-13.3c-6-6-14.1-9.4-22.6-9.4H320c-17.7 0-32 14.3-32 32V480z"/></symbol><symbol id="fa-solid-gift" viewBox="0 0 512 512"><path d="M190.5 68.8L225.3 128H224 152c-22.1 0-40-17.9-40-40s17.9-40 40-40h2.2c14.9 0 28.8 7.9 36.3 20.8zM64 88c0 14.4 3.5 28 9.6 40H32c-17.7 0-32 14.3-32 32v64c0 17.7 14.3 32 32 32H480c17.7 0 32-14.3 32-32V160c0-17.7-14.3-32-32-32H438.4c6.1-12 9.6-25.6 9.6-40c0-48.6-39.4-88-88-88h-2.2c-31.9 0-61.5 16.9-77.7 44.4L256 85.5l-24.1-41C215.7 16.9 186.1 0 154.2 0H152C103.4 0 64 39.4 64 88zm336 0c0 22.1-17.9 40-40 40H288h-1.3l34.8-59.2C329.1 55.9 342.9 48 357.8 48H360c22.1 0 40 17.9 40 40zM32 288V464c0 26.5 21.5 48 48 48H224V288H32zM288 512H432c26.5 0 48-21.5 48-48V288H288V512z"/></symbol><symbol id="fa-solid-id-card" viewBox="0 0 576 512"><path d="M0 96l576 0c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96zm0 32V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V128H0zM64 405.3c0-29.5 23.9-53.3 53.3-53.3H234.7c29.5 0 53.3 23.9 53.3 53.3c0 5.9-4.8 10.7-10.7 10.7H74.7c-5.9 0-10.7-4.8-10.7-10.7zM176 192a64 64 0 1 1 0 128 64 64 0 1 1 0-128zm176 16c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16zm0 64c0-8.8 7.2-16 16-16H496c8.8 0 16 7.2 16 16s-7.2 16-16 16H368c-8.8 0-16-7.2-16-16z"/></symbol><symbol id="fa-solid-lock" viewBox="0 0 448 512"><path d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z"/></symbol><symbol id="fa-solid-mobile-screen" viewBox="0 0 384 512"><path d="M16 64C16 28.7 44.7 0 80 0H304c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H80c-35.3 0-64-28.7-64-64V64zM144 448c0 8.8 7.2 16 16 16h64c8.8 0 16-7.2 16-16s-7.2-16-16-16H160c-8.8 0-16 7.2-16 16zM304 64H80V384H304V64z"/></symbol><symbol id="fa-solid-paper-plane" viewBox="0 0 512 512"><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480V396.4c0-4 1.5-7.8 4.2-10.7L331.8 202.8c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8 17.7 316.6C7.1 311.3 .3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></symbol><symbol id="fa-solid-puzzle-piece" viewBox="0 0 512 512"><path d="M192 104.8c0-9.2-5.8-17.3-13.2-22.8C167.2 73.3 160 61.3 160 48c0-26.5 28.7-48 64-48s64 21.5 64 48c0 13.3-7.2 25.3-18.8 34c-7.4 5.5-13.2 13.6-13.2 22.8c0 12.8 10.4 23.2 23.2 23.2H336c26.5 0 48 21.5 48 48v56.8c0 12.8 10.4 23.2 23.2 23.2c9.2 0 17.3-5.8 22.8-13.2c8.7-11.6 20.7-18.8 34-18.8c26.5 0 48 28.7 48 64s-21.5 64-48 64c-13.3 0-25.3-7.2-34-18.8c-5.5-7.4-13.6-13.2-22.8-13.2c-12.8 0-23.2 10.4-23.2 23.2V464c0 26.5-21.5 48-48 48H279.2c-12.8 0-23.2-10.4-23.2-23.2c0-9.2 5.8-17.3 13.2-22.8c11.6-8.7 18.8-20.7 18.8-34c0-26.5-28.7-48-64-48s-64 21.5-64 48c0 13.3 7.2 25.3 18.8 34c7.4 5.5 13.2 13.6 13.2 22.8c0 12.8-10.4 23.2-23.2 23.2H48c-26.5 0-48-21.5-48-48V343.2C0 330.4 10.4 320 23.2 320c9.2 0 17.3 5.8 22.8 13.2C54.7 344.8 66.7 352 80 352c26.5 0 48-28.7 48-64s-21.5-64-48-64c-13.3 0-25.3 7.2-34 18.8C40.5 250.2 32.4 256 23.2 256C10.4 256 0 245.6 0 232.8V176c0-26.5 21.5-48 48-48H168.8c12.8 0 23.2-10.4 23.2-23.2z"/></symbol><symbol id="fa-solid-route" viewBox="0 0 512 512"><path d="M512 96c0 50.2-59.1 125.1-84.6 155c-3.8 4.4-9.4 6.1-14.5 5H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c53 0 96 43 96 96s-43 96-96 96H139.6c8.7-9.9 19.3-22.6 30-36.8c6.3-8.4 12.8-17.6 19-27.2H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320c-53 0-96-43-96-96s43-96 96-96h39.8c-21-31.5-39.8-67.7-39.8-96c0-53 43-96 96-96s96 43 96 96zM117.1 489.1c-3.8 4.3-7.2 8.1-10.1 11.3l-1.8 2-.2-.2c-6 4.6-14.6 4-20-1.8C59.8 473 0 402.5 0 352c0-53 43-96 96-96s96 43 96 96c0 30-21.1 67-43.5 97.9c-10.7 14.7-21.7 28-30.8 38.5l-.6 .7zM128 352a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM416 128a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></symbol><symbol id="fa-solid-scale-balanced" viewBox="0 0 640 512"><path d="M384 32H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H398.4c-5.2 25.8-22.9 47.1-46.4 57.3V448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 128c-17.7 0-32-14.3-32-32s14.3-32 32-32H288V153.3c-23.5-10.3-41.2-31.6-46.4-57.3H128c-17.7 0-32-14.3-32-32s14.3-32 32-32H256c14.6-19.4 37.8-32 64-32s49.4 12.6 64 32zm55.6 288H584.4L512 195.8 439.6 320zM512 416c-62.9 0-115.2-34-126-78.9c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C627.2 382 574.9 416 512 416zM126.8 195.8L54.4 320H199.3L126.8 195.8zM.9 337.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1C242 382 189.7 416 126.8 416S11.7 382 .9 337.1z"/></symbol><symbol id="fa-solid-school" viewBox="0 0 640 512"><path d="M337.8 5.4C327-1.8 313-1.8 302.2 5.4L166.3 96H48C21.5 96 0 117.5 0 144V464c0 26.5 21.5 48 48 48H256V416c0-35.3 28.7-64 64-64s64 28.7 64 64v96H592c26.5 0 48-21.5 48-48V144c0-26.5-21.5-48-48-48H473.7L337.8 5.4zM96 192h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16V208c0-8.8 7.2-16 16-16zm400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H512c-8.8 0-16-7.2-16-16V208zM96 320h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16V336c0-8.8 7.2-16 16-16zm400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H512c-8.8 0-16-7.2-16-16V336zM232 176a88 88 0 1 1 176 0 88 88 0 1 1 -176 0zm88-48c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H336V144c0-8.8-7.2-16-16-16z"/></symbol><symbol id="fa-solid-shield-heart" viewBox="0 0 512 512"><path d="M269.4 2.9C265.2 1 260.7 0 256 0s-9.2 1-13.4 2.9L54.3 82.8c-22 9.3-38.4 31-38.3 57.2c.5 99.2 41.3 280.7 213.6 363.2c16.7 8 36.1 8 52.8 0C454.7 420.7 495.5 239.2 496 140c.1-26.2-16.3-47.9-38.3-57.2L269.4 2.9zM144 221.3c0-33.8 27.4-61.3 61.3-61.3c16.2 0 31.8 6.5 43.3 17.9l7.4 7.4 7.4-7.4c11.5-11.5 27.1-17.9 43.3-17.9c33.8 0 61.3 27.4 61.3 61.3c0 16.2-6.5 31.8-17.9 43.3l-82.7 82.7c-6.2 6.2-16.4 6.2-22.6 0l-82.7-82.7c-11.5-11.5-17.9-27.1-17.9-43.3z"/></symbol><symbol id="fa-solid-star" viewBox="0 0 576 512"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></symbol></svg>
 
 <!-- 1 · FAIXA DE TOPO -->
 <div class="topbar"><span><i class="dot"></i>Preço de lançamento · para pais de crianças com autismo</span></div>
@@ -373,27 +372,27 @@ footer p{max-width:820px;margin:0 auto 8px}
 <header class="hero">
   <div class="wrap hero-grid">
     <div>
-      <div class="selo-pub-w"><span class="selo-pub"><i class="fa-solid fa-puzzle-piece"></i> Para mães e pais de crianças autistas</span></div>
+      <div class="selo-pub-w"><span class="selo-pub"><i class="fa-solid fa-puzzle-piece"><svg class="fai" style="width:1.000em" viewBox="0 0 512 512" aria-hidden="true"><use href="#fa-solid-puzzle-piece"/></svg></i> Para mães e pais de crianças autistas</span></div>
       <p class="kit-nome rv"><span class="k">Kit</span> <span class="d">Direitos</span> do <span class="a">Autista</span></p>
       <h1 class="rv prom"><span class="k">40</span> <span class="d">pedidos</span> <span class="a">prontos</span> para garantir os direitos do seu filho autista no plano, na escola e no INSS</h1>
       <p class="h2 rv d1">Plano de saúde, escola, BPC e carteirinha CIPTEA, <b>com a lei certa já citada</b> em cada pedido. <span class="marca">É só preencher e enviar.</span></p>
       <p class="lead rv d2">O plano negou a terapia? A escola diz que não tem apoio? Você não precisa escrever nada do zero: cada pedido já vem pronto, com a lei certa citada, para você colocar o nome do seu filho e enviar hoje.</p>
       <ul class="checks rv d2">
-        <li><i class="fa-solid fa-check"></i>40 pedidos prontos, separados por situação</li>
-        <li><i class="fa-solid fa-check"></i>A lei de cada direito já citada no texto</li>
-        <li><i class="fa-solid fa-check"></i>Campos em destaque: é só preencher</li>
-        <li><i class="fa-solid fa-check"></i>Em Word e PDF: edite no celular ou imprima</li>
-        <li><i class="fa-solid fa-check"></i>Passo a passo de onde e como entregar cada um</li>
+        <li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>40 pedidos prontos, separados por situação</li>
+        <li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>A lei de cada direito já citada no texto</li>
+        <li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>Campos em destaque: é só preencher</li>
+        <li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>Em Word e PDF: edite no celular ou imprima</li>
+        <li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>Passo a passo de onde e como entregar cada um</li>
       </ul>
-      <div class="cta-h rv d3"><a class="btn go" href="#planos">Quero meus 40 pedidos prontos <i class="fa-solid fa-arrow-right"></i></a><p class="preco-h">A partir de <b>R$ 17,90</b> · pagamento único, sem mensalidade</p><div class="seg"><span class="seg-pill"><i class="fa-solid fa-lock"></i> <span>Compra 100% segura · <b class="plat">Wiapy</b></span></span><p><i class="fa-regular fa-envelope"></i><span>Pagamento processado pela <b class="plat">Wiapy</b>, no Pix ou no cartão. Assim que ele é aprovado, <b>a <span class="plat">Wiapy</span> envia o seu acesso para o seu e-mail</b>, com os pedidos em Word e PDF para usar na hora.</span></p></div></div>
-      <div class="mini-garantia"><span><i class="fa-solid fa-bolt"></i>Acesso imediato</span><span><i class="fa-solid fa-shield-heart"></i>30 dias de garantia</span><span><i class="fa-solid fa-lock"></i>Compra segura</span></div>
+      <div class="cta-h rv d3"><a class="btn go" href="#planos">Quero meus 40 pedidos prontos <i class="fa-solid fa-arrow-right"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-arrow-right"/></svg></i></a><p class="preco-h">A partir de <b>R$ 17,90</b> · pagamento único, sem mensalidade</p><div class="seg"><span class="seg-pill"><i class="fa-solid fa-lock"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-lock"/></svg></i> <span>Compra 100% segura · <b class="plat">Wiapy</b></span></span><p><i class="fa-regular fa-envelope"><svg class="fai" style="width:1.000em" viewBox="0 0 512 512" aria-hidden="true"><use href="#fa-regular-envelope"/></svg></i><span>Pagamento processado pela <b class="plat">Wiapy</b>, no Pix ou no cartão. Assim que ele é aprovado, <b>a <span class="plat">Wiapy</span> envia o seu acesso para o seu e-mail</b>, com os pedidos em Word e PDF para usar na hora.</span></p></div></div>
+      <div class="mini-garantia"><span><i class="fa-solid fa-bolt"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-bolt"/></svg></i>Acesso imediato</span><span><i class="fa-solid fa-shield-heart"><svg class="fai" style="width:1.000em" viewBox="0 0 512 512" aria-hidden="true"><use href="#fa-solid-shield-heart"/></svg></i>30 dias de garantia</span><span><i class="fa-solid fa-lock"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-lock"/></svg></i>Compra segura</span></div>
     </div>
-    <div class="hero-img"><img class="float" src="assets/capa-kit.webp" fetchpriority="high" alt="Mockup do Kit Direitos do Autista" data-ph="IMG 01 · capa-kit.webp · tablet + impressora + folhas (4:3)"></div>
+    <div class="hero-img"><img class="float" src="assets/capa-kit.webp" fetchpriority="high" decoding="async" alt="Mockup do Kit Direitos do Autista" data-ph="IMG 01 · capa-kit.webp · tablet + impressora + folhas (4:3)"></div>
   </div>
 </header>
 
 <!-- 3 · ENTREGA -->
-<div class="entrega"><div class="wrap"><h2>Você recebe tudo na hora, direto no seu <span class="wa"><i class="fa-brands fa-whatsapp"></i></span> WhatsApp e no seu <span class="em"><i class="fa-solid fa-envelope"></i></span> e-mail</h2></div></div>
+<div class="entrega"><div class="wrap"><h2>Você recebe tudo na hora, direto no seu <span class="wa"><i class="fa-brands fa-whatsapp"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-brands-whatsapp"/></svg></i></span> WhatsApp e no seu <span class="em"><i class="fa-solid fa-envelope"><svg class="fai" style="width:1.000em" viewBox="0 0 512 512" aria-hidden="true"><use href="#fa-solid-envelope"/></svg></i></span> e-mail</h2></div></div>
 
 <!-- 3b · PERGUNTA DE DOR (subiu para logo depois do topo) -->
 <section class="dor">
@@ -410,16 +409,16 @@ footer p{max-width:820px;margin:0 auto 8px}
     <h2 class="rv">Veja alguns dos <span class="c-azul">pedidos</span> que você recebe</h2>
     <p class="sub rv">Páginas reais do kit, prontas para preencher.</p>
     <div class="slider rv" data-slider>
-      <button class="arw l" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+      <button class="arw l" aria-label="Anterior"><i class="fa-solid fa-chevron-left"><svg class="fai" style="width:0.625em" viewBox="0 0 320 512" aria-hidden="true"><use href="#fa-solid-chevron-left"/></svg></i></button>
       <div class="track">
-        <div class="slide"><img src="assets/vitrine-01.webp" alt="Pedido de negativa por escrito ao plano" data-ph="IMG 02 · vitrine-01.webp"><div class="cap"><small>Plano de saúde</small>Pedido de negativa por escrito</div></div>
-        <div class="slide"><img src="assets/vitrine-02.webp" alt="Solicitação de profissional de apoio na escola" data-ph="IMG 03 · vitrine-02.webp"><div class="cap"><small>Escola</small>Solicitação de profissional de apoio</div></div>
-        <div class="slide"><img src="assets/vitrine-03.webp" alt="Pedido de PEI" data-ph="IMG 04 · vitrine-03.webp"><div class="cap"><small>Escola</small>Pedido de PEI</div></div>
-        <div class="slide"><img src="assets/vitrine-04.webp" alt="Recurso do BPC" data-ph="IMG 05 · vitrine-04.webp"><div class="cap"><small>BPC / INSS</small>Recurso do BPC</div></div>
-        <div class="slide"><img src="assets/vitrine-05.webp" alt="Solicitação da CIPTEA" data-ph="IMG 06 · vitrine-05.webp"><div class="cap"><small>Outros direitos</small>Solicitação da carteirinha CIPTEA</div></div>
-        <div class="slide"><img src="assets/vitrine-06.webp" alt="Reclamação na ANS" data-ph="IMG 07 · vitrine-06.webp"><div class="cap"><small>Plano de saúde</small>Roteiro da reclamação na ANS</div></div>
+        <div class="slide"><img loading="lazy" decoding="async" src="assets/vitrine-01.webp" alt="Pedido de negativa por escrito ao plano" data-ph="IMG 02 · vitrine-01.webp"><div class="cap"><small>Plano de saúde</small>Pedido de negativa por escrito</div></div>
+        <div class="slide"><img loading="lazy" decoding="async" src="assets/vitrine-02.webp" alt="Solicitação de profissional de apoio na escola" data-ph="IMG 03 · vitrine-02.webp"><div class="cap"><small>Escola</small>Solicitação de profissional de apoio</div></div>
+        <div class="slide"><img loading="lazy" decoding="async" src="assets/vitrine-03.webp" alt="Pedido de PEI" data-ph="IMG 04 · vitrine-03.webp"><div class="cap"><small>Escola</small>Pedido de PEI</div></div>
+        <div class="slide"><img loading="lazy" decoding="async" src="assets/vitrine-04.webp" alt="Recurso do BPC" data-ph="IMG 05 · vitrine-04.webp"><div class="cap"><small>BPC / INSS</small>Recurso do BPC</div></div>
+        <div class="slide"><img loading="lazy" decoding="async" src="assets/vitrine-05.webp" alt="Solicitação da CIPTEA" data-ph="IMG 06 · vitrine-05.webp"><div class="cap"><small>Outros direitos</small>Solicitação da carteirinha CIPTEA</div></div>
+        <div class="slide"><img loading="lazy" decoding="async" src="assets/vitrine-06.webp" alt="Reclamação na ANS" data-ph="IMG 07 · vitrine-06.webp"><div class="cap"><small>Plano de saúde</small>Roteiro da reclamação na ANS</div></div>
       </div>
-      <button class="arw r" aria-label="Próximo"><i class="fa-solid fa-chevron-right"></i></button>
+      <button class="arw r" aria-label="Próximo"><i class="fa-solid fa-chevron-right"><svg class="fai" style="width:0.625em" viewBox="0 0 320 512" aria-hidden="true"><use href="#fa-solid-chevron-right"/></svg></i></button>
       <div class="dots"></div>
     </div>
   </div>
@@ -430,10 +429,10 @@ footer p{max-width:820px;margin:0 auto 8px}
   <div class="wrap">
     <h2 class="rv">Os pedidos do Kit Direitos do Autista são:</h2>
     <div class="grid4" style="margin-top:30px">
-      <div class="card rv"><div class="ico i1"><i class="fa-solid fa-file-signature"></i></div><h3>Prontos para enviar</h3><p>O texto já está escrito. Você só preenche os dados.</p></div>
-      <div class="card rv d1"><div class="ico i2"><i class="fa-solid fa-scale-balanced"></i></div><h3>Com a lei citada</h3><p>Cada pedido mostra o artigo que garante aquele direito.</p></div>
-      <div class="card rv d2"><div class="ico i3"><i class="fa-solid fa-folder-tree"></i></div><h3>Organizados por situação</h3><p>Plano, escola, INSS e documentos, cada um na sua pasta.</p></div>
-      <div class="card rv d3"><div class="ico i4"><i class="fa-solid fa-route"></i></div><h3>Com guia de entrega</h3><p>Onde protocolar, o prazo de resposta e o que fazer se negarem.</p></div>
+      <div class="card rv"><div class="ico i1"><i class="fa-solid fa-file-signature"><svg class="fai" style="width:1.125em" viewBox="0 0 576 512" aria-hidden="true"><use href="#fa-solid-file-signature"/></svg></i></div><h3>Prontos para enviar</h3><p>O texto já está escrito. Você só preenche os dados.</p></div>
+      <div class="card rv d1"><div class="ico i2"><i class="fa-solid fa-scale-balanced"><svg class="fai" style="width:1.250em" viewBox="0 0 640 512" aria-hidden="true"><use href="#fa-solid-scale-balanced"/></svg></i></div><h3>Com a lei citada</h3><p>Cada pedido mostra o artigo que garante aquele direito.</p></div>
+      <div class="card rv d2"><div class="ico i3"><i class="fa-solid fa-folder-tree"><svg class="fai" style="width:1.125em" viewBox="0 0 576 512" aria-hidden="true"><use href="#fa-solid-folder-tree"/></svg></i></div><h3>Organizados por situação</h3><p>Plano, escola, INSS e documentos, cada um na sua pasta.</p></div>
+      <div class="card rv d3"><div class="ico i4"><i class="fa-solid fa-route"><svg class="fai" style="width:1.000em" viewBox="0 0 512 512" aria-hidden="true"><use href="#fa-solid-route"/></svg></i></div><h3>Com guia de entrega</h3><p>Onde protocolar, o prazo de resposta e o que fazer se negarem.</p></div>
     </div>
     <p class="nota rv">Pedidos prontos para usar hoje.</p>
     <div class="cta rv"><a class="btn go" href="#planos">Quero o Kit Direitos do Autista</a></div>
@@ -445,16 +444,16 @@ footer p{max-width:820px;margin:0 auto 8px}
   <div class="wrap">
     <h2 class="rv">Com o kit, você para de pesquisar e começa a <span class="c-azul">pedir por escrito</span> o que é direito do seu filho</h2>
     <ul class="lista-b" style="margin-top:30px">
-      <li class="rv"><i class="fa-solid fa-circle-check"></i>Para de perder noites procurando modelo na internet</li>
-      <li class="rv d1"><i class="fa-solid fa-circle-check"></i>Pede por escrito e com protocolo, em vez de só conversar no balcão</li>
-      <li class="rv d1"><i class="fa-solid fa-circle-check"></i>Mostra ao plano e à escola que conhece a lei</li>
-      <li class="rv d2"><i class="fa-solid fa-circle-check"></i>Não esquece nenhum direito: está tudo numa lista só</li>
-      <li class="rv d2"><i class="fa-solid fa-circle-check"></i>Economiza a consulta só para "escrever um pedido"</li>
+      <li class="rv"><i class="fa-solid fa-circle-check"><svg class="fai" style="width:1.000em" viewBox="0 0 512 512" aria-hidden="true"><use href="#fa-solid-circle-check"/></svg></i>Para de perder noites procurando modelo na internet</li>
+      <li class="rv d1"><i class="fa-solid fa-circle-check"><svg class="fai" style="width:1.000em" viewBox="0 0 512 512" aria-hidden="true"><use href="#fa-solid-circle-check"/></svg></i>Pede por escrito e com protocolo, em vez de só conversar no balcão</li>
+      <li class="rv d1"><i class="fa-solid fa-circle-check"><svg class="fai" style="width:1.000em" viewBox="0 0 512 512" aria-hidden="true"><use href="#fa-solid-circle-check"/></svg></i>Mostra ao plano e à escola que conhece a lei</li>
+      <li class="rv d2"><i class="fa-solid fa-circle-check"><svg class="fai" style="width:1.000em" viewBox="0 0 512 512" aria-hidden="true"><use href="#fa-solid-circle-check"/></svg></i>Não esquece nenhum direito: está tudo numa lista só</li>
+      <li class="rv d2"><i class="fa-solid fa-circle-check"><svg class="fai" style="width:1.000em" viewBox="0 0 512 512" aria-hidden="true"><use href="#fa-solid-circle-check"/></svg></i>Economiza a consulta só para "escrever um pedido"</li>
     </ul>
     <div class="cta rv"><a class="btn go" href="#planos">Quero acessar agora e usar hoje</a></div>
   </div>
   <div class="marquee"><div class="mq">
-    <img src="assets/uso-01.webp" alt="" data-ph="IMG 08 · uso-01.webp"><img src="assets/uso-02.webp" alt="" data-ph="IMG 09 · uso-02.webp"><img src="assets/uso-03.webp" alt="" data-ph="IMG 10 · uso-03.webp"><img src="assets/uso-04.webp" alt="" data-ph="IMG 11 · uso-04.webp"><img src="assets/uso-05.webp" alt="" data-ph="IMG 12 · uso-05.webp">
+    <img loading="lazy" decoding="async" src="assets/uso-01.webp" alt="" data-ph="IMG 08 · uso-01.webp"><img loading="lazy" decoding="async" src="assets/uso-02.webp" alt="" data-ph="IMG 09 · uso-02.webp"><img loading="lazy" decoding="async" src="assets/uso-03.webp" alt="" data-ph="IMG 10 · uso-03.webp"><img loading="lazy" decoding="async" src="assets/uso-04.webp" alt="" data-ph="IMG 11 · uso-04.webp"><img loading="lazy" decoding="async" src="assets/uso-05.webp" alt="" data-ph="IMG 12 · uso-05.webp">
   </div></div>
 </section>
 
@@ -465,12 +464,12 @@ footer p{max-width:820px;margin:0 auto 8px}
   <div class="wrap">
     <h2 class="rv">Este kit é para você que deseja</h2>
     <div class="grid3" style="margin-top:30px">
-      <div class="it rv"><i class="fa-solid fa-check"></i><div><h3>Conseguir a resposta do plano por escrito</h3><p>Pedir a negativa formal e saber o próximo passo se ela vier.</p></div></div>
-      <div class="it rv d1"><i class="fa-solid fa-check"></i><div><h3>Pedir o apoio do seu filho na escola</h3><p>Profissional de apoio, PEI e adaptações, com a lei citada.</p></div></div>
-      <div class="it rv d2"><i class="fa-solid fa-check"></i><div><h3>Dar entrada no BPC sem se perder</h3><p>A lista dos documentos e o pedido de recurso se for indeferido.</p></div></div>
-      <div class="it rv"><i class="fa-solid fa-check"></i><div><h3>Tirar a carteirinha CIPTEA</h3><p>O pedido pronto e onde fazer, para usar a prioridade.</p></div></div>
-      <div class="it rv d1"><i class="fa-solid fa-check"></i><div><h3>Parar de explicar tudo de novo</h3><p>Uma ficha do seu filho pronta para a escola e os terapeutas.</p></div></div>
-      <div class="it rv d2"><i class="fa-solid fa-check"></i><div><h3>Agir hoje, sem esperar</h3><p>Abrir o arquivo, preencher e enviar.</p></div></div>
+      <div class="it rv"><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i><div><h3>Conseguir a resposta do plano por escrito</h3><p>Pedir a negativa formal e saber o próximo passo se ela vier.</p></div></div>
+      <div class="it rv d1"><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i><div><h3>Pedir o apoio do seu filho na escola</h3><p>Profissional de apoio, PEI e adaptações, com a lei citada.</p></div></div>
+      <div class="it rv d2"><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i><div><h3>Dar entrada no BPC sem se perder</h3><p>A lista dos documentos e o pedido de recurso se for indeferido.</p></div></div>
+      <div class="it rv"><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i><div><h3>Tirar a carteirinha CIPTEA</h3><p>O pedido pronto e onde fazer, para usar a prioridade.</p></div></div>
+      <div class="it rv d1"><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i><div><h3>Parar de explicar tudo de novo</h3><p>Uma ficha do seu filho pronta para a escola e os terapeutas.</p></div></div>
+      <div class="it rv d2"><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i><div><h3>Agir hoje, sem esperar</h3><p>Abrir o arquivo, preencher e enviar.</p></div></div>
     </div>
   </div>
 </section>
@@ -482,7 +481,7 @@ footer p{max-width:820px;margin:0 auto 8px}
     <p style="text-align:center;margin-bottom:10px" class="rv"><span class="tag">⚡ ACESSO IMEDIATO</span></p>
     <p class="sub rv">Tudo foi organizado para ser simples: você escolhe a situação e já tem o pedido na mão.</p>
     <div class="recebe-grid">
-      <div class="rv"><img src="assets/capa-kit.webp" alt="Kit Direitos do Autista" data-ph="IMG 01 · capa-kit.webp (repete)"></div>
+      <div class="rv"><img loading="lazy" decoding="async" src="assets/capa-kit.webp" alt="Kit Direitos do Autista" data-ph="IMG 01 · capa-kit.webp (repete)"></div>
       <div>
         <div class="pastas rv">
           <div class="pasta p1"><b>12</b><span>pedidos para o plano de saúde</span></div>
@@ -491,14 +490,14 @@ footer p{max-width:820px;margin:0 auto 8px}
           <div class="pasta p4"><b>10</b><span>pedidos de outros direitos</span></div>
         </div>
         <ul class="lista-r rv d1">
-          <li><i class="fa-solid fa-check"></i>A lei de cada direito citada no pedido</li>
-          <li><i class="fa-solid fa-check"></i>Campos em destaque para preencher</li>
-          <li><i class="fa-solid fa-check"></i>Arquivos em Word (editáveis) e PDF</li>
-          <li><i class="fa-solid fa-check"></i>Guia de entrega: onde protocolar e prazo de resposta</li>
-          <li><i class="fa-solid fa-check"></i>O que fazer se negarem (próximo pedido da sequência)</li>
-          <li><i class="fa-solid fa-check"></i>Ficha "Conheça meu filho" para a escola e os terapeutas</li>
-          <li><i class="fa-solid fa-check"></i>Controle de protocolos: o que pediu, quando e a resposta</li>
-          <li><i class="fa-solid fa-check"></i>Acesso vitalício, sem mensalidade</li>
+          <li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>A lei de cada direito citada no pedido</li>
+          <li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>Campos em destaque para preencher</li>
+          <li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>Arquivos em Word (editáveis) e PDF</li>
+          <li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>Guia de entrega: onde protocolar e prazo de resposta</li>
+          <li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>O que fazer se negarem (próximo pedido da sequência)</li>
+          <li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>Ficha "Conheça meu filho" para a escola e os terapeutas</li>
+          <li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>Controle de protocolos: o que pediu, quando e a resposta</li>
+          <li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>Acesso vitalício, sem mensalidade</li>
         </ul>
       </div>
     </div>
@@ -513,12 +512,12 @@ footer p{max-width:820px;margin:0 auto 8px}
       <h2 class="rv d1">🔥 6 bônus exclusivos do Plano Completo</h2>
     </div>
     <div class="grid2">
-      <div class="bn rv"><div class="num">BÔNUS #1</div><div class="bimg"><img src="assets/bonus-1.webp" alt="200 Pictogramas de Rotina" data-ph="IMG 13 · bonus-1.webp"></div><div class="bd"><h3>200 Pictogramas de Rotina para Imprimir</h3><p>A rotina na parede: a criança vê o que vem agora e o que vem depois.</p><ul><li><i class="fa-solid fa-check"></i>Manhã, banho, escola e hora de dormir</li><li><i class="fa-solid fa-check"></i>Quadro "Primeiro → Depois"</li><li><i class="fa-solid fa-check"></i>Sentimentos e pedidos rápidos</li></ul></div></div>
-      <div class="bn rv d1"><div class="num">BÔNUS #2</div><div class="bimg"><img src="assets/bonus-2.webp" alt="Checklist dos Primeiros 30 Dias" data-ph="IMG 14 · bonus-2.webp"></div><div class="bd"><h3>Checklist dos Primeiros 30 Dias Depois do Laudo</h3><p>Uma folha com a ordem certa: o que pedir primeiro, depois e depois.</p><ul><li><i class="fa-solid fa-check"></i>Semana 1: documentos e plano</li><li><i class="fa-solid fa-check"></i>Semana 2: escola</li><li><i class="fa-solid fa-check"></i>Semanas 3 e 4: INSS e CIPTEA</li></ul></div></div>
-      <div class="bn rv"><div class="num">BÔNUS #3</div><div class="bimg"><img src="assets/bonus-3.webp" alt="Pasta do Meu Filho" data-ph="IMG 15 · bonus-3.webp"></div><div class="bd"><h3>Pasta do Meu Filho (organizador para imprimir)</h3><p>Laudos, relatórios, receitas e protocolos num lugar só.</p><ul><li><i class="fa-solid fa-check"></i>Capas e divisórias</li><li><i class="fa-solid fa-check"></i>Folha de controle de consultas</li><li><i class="fa-solid fa-check"></i>Lista de terapeutas e contatos</li></ul></div></div>
-      <div class="bn rv d1"><div class="num">BÔNUS #4</div><div class="bimg"><img src="assets/bonus-4.webp" alt="Frases Prontas para Reunião na Escola" data-ph="IMG 16 · bonus-4.webp"></div><div class="bd"><h3>Frases Prontas para Reunião na Escola</h3><p>O que dizer, e como, para pedir o que seu filho precisa sem briga.</p><ul><li><i class="fa-solid fa-check"></i>Abrir a reunião</li><li><i class="fa-solid fa-check"></i>Pedir adaptação</li><li><i class="fa-solid fa-check"></i>Registrar o combinado por escrito</li></ul></div></div>
-      <div class="bn rv"><div class="num">BÔNUS #5</div><div class="bimg"><img src="assets/bonus-5.webp" alt="Controle dos 40 Pedidos: Planilha de Prazos e Protocolos" data-ph="IMG 19 · bonus-5.webp"></div><div class="bd"><h3>Controle dos 40 Pedidos: Planilha de Prazos e Protocolos</h3><p>Você anota o pedido e a planilha calcula até quando eles têm para responder.</p><ul><li><i class="fa-solid fa-check"></i>Prazo de cada pedido calculado sozinho</li><li><i class="fa-solid fa-check"></i>Fica vermelho quando é hora de cobrar</li><li><i class="fa-solid fa-check"></i>Mostra o próximo pedido do kit se negarem</li></ul></div></div>
-      <div class="bn rv d1"><div class="num">BÔNUS #6</div><div class="bimg"><img src="assets/bonus-6.webp" alt="Pedido Extra: Cartas Prontas para Médico e Terapeutas" data-ph="IMG 20 · bonus-6.webp"></div><div class="bd"><h3>Pedido Extra: Cartas Prontas para Médico e Terapeutas</h3><p>O relatório certo deixa seus 40 pedidos mais fortes. Peça do jeito certo e confira antes de anexar.</p><ul><li><i class="fa-solid fa-check"></i>Relatório da terapeuta para a escola</li><li><i class="fa-solid fa-check"></i>Laudo atualizado e relatório de evolução</li><li><i class="fa-solid fa-check"></i>Checklist de conferência por pedido</li></ul></div></div>
+      <div class="bn rv"><div class="num">BÔNUS #1</div><div class="bimg"><img loading="lazy" decoding="async" src="assets/bonus-1.webp" alt="200 Pictogramas de Rotina" data-ph="IMG 13 · bonus-1.webp"></div><div class="bd"><h3>200 Pictogramas de Rotina para Imprimir</h3><p>A rotina na parede: a criança vê o que vem agora e o que vem depois.</p><ul><li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>Manhã, banho, escola e hora de dormir</li><li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>Quadro "Primeiro → Depois"</li><li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>Sentimentos e pedidos rápidos</li></ul></div></div>
+      <div class="bn rv d1"><div class="num">BÔNUS #2</div><div class="bimg"><img loading="lazy" decoding="async" src="assets/bonus-2.webp" alt="Checklist dos Primeiros 30 Dias" data-ph="IMG 14 · bonus-2.webp"></div><div class="bd"><h3>Checklist dos Primeiros 30 Dias Depois do Laudo</h3><p>Uma folha com a ordem certa: o que pedir primeiro, depois e depois.</p><ul><li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>Semana 1: documentos e plano</li><li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>Semana 2: escola</li><li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>Semanas 3 e 4: INSS e CIPTEA</li></ul></div></div>
+      <div class="bn rv"><div class="num">BÔNUS #3</div><div class="bimg"><img loading="lazy" decoding="async" src="assets/bonus-3.webp" alt="Pasta do Meu Filho" data-ph="IMG 15 · bonus-3.webp"></div><div class="bd"><h3>Pasta do Meu Filho (organizador para imprimir)</h3><p>Laudos, relatórios, receitas e protocolos num lugar só.</p><ul><li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>Capas e divisórias</li><li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>Folha de controle de consultas</li><li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>Lista de terapeutas e contatos</li></ul></div></div>
+      <div class="bn rv d1"><div class="num">BÔNUS #4</div><div class="bimg"><img loading="lazy" decoding="async" src="assets/bonus-4.webp" alt="Frases Prontas para Reunião na Escola" data-ph="IMG 16 · bonus-4.webp"></div><div class="bd"><h3>Frases Prontas para Reunião na Escola</h3><p>O que dizer, e como, para pedir o que seu filho precisa sem briga.</p><ul><li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>Abrir a reunião</li><li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>Pedir adaptação</li><li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>Registrar o combinado por escrito</li></ul></div></div>
+      <div class="bn rv"><div class="num">BÔNUS #5</div><div class="bimg"><img loading="lazy" decoding="async" src="assets/bonus-5.webp" alt="Controle dos 40 Pedidos: Planilha de Prazos e Protocolos" data-ph="IMG 19 · bonus-5.webp"></div><div class="bd"><h3>Controle dos 40 Pedidos: Planilha de Prazos e Protocolos</h3><p>Você anota o pedido e a planilha calcula até quando eles têm para responder.</p><ul><li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>Prazo de cada pedido calculado sozinho</li><li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>Fica vermelho quando é hora de cobrar</li><li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>Mostra o próximo pedido do kit se negarem</li></ul></div></div>
+      <div class="bn rv d1"><div class="num">BÔNUS #6</div><div class="bimg"><img loading="lazy" decoding="async" src="assets/bonus-6.webp" alt="Pedido Extra: Cartas Prontas para Médico e Terapeutas" data-ph="IMG 20 · bonus-6.webp"></div><div class="bd"><h3>Pedido Extra: Cartas Prontas para Médico e Terapeutas</h3><p>O relatório certo deixa seus 40 pedidos mais fortes. Peça do jeito certo e confira antes de anexar.</p><ul><li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>Relatório da terapeuta para a escola</li><li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>Laudo atualizado e relatório de evolução</li><li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>Checklist de conferência por pedido</li></ul></div></div>
     </div>
   </div>
 </section>
@@ -536,61 +535,61 @@ footer p{max-width:820px;margin:0 auto 8px}
       <!-- Prova 1: Escola e PEI -->
       <div class="depo-card rv">
         <div class="depo-badge">
-          <span><i class="fa-solid fa-school"></i> Escola &amp; Plano Pedagógico (PEI)</span>
-          <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+          <span><i class="fa-solid fa-school"><svg class="fai" style="width:1.250em" viewBox="0 0 640 512" aria-hidden="true"><use href="#fa-solid-school"/></svg></i> Escola &amp; Plano Pedagógico (PEI)</span>
+          <span class="stars"><i class="fa-solid fa-star"><svg class="fai" style="width:1.125em" viewBox="0 0 576 512" aria-hidden="true"><use href="#fa-solid-star"/></svg></i><i class="fa-solid fa-star"><svg class="fai" style="width:1.125em" viewBox="0 0 576 512" aria-hidden="true"><use href="#fa-solid-star"/></svg></i><i class="fa-solid fa-star"><svg class="fai" style="width:1.125em" viewBox="0 0 576 512" aria-hidden="true"><use href="#fa-solid-star"/></svg></i><i class="fa-solid fa-star"><svg class="fai" style="width:1.125em" viewBox="0 0 576 512" aria-hidden="true"><use href="#fa-solid-star"/></svg></i><i class="fa-solid fa-star"><svg class="fai" style="width:1.125em" viewBox="0 0 576 512" aria-hidden="true"><use href="#fa-solid-star"/></svg></i></span>
         </div>
         <div class="depo-img"><img src="assets/depoimento-1.webp" alt="Depoimento Maria Lúcia sobre pedido para escola e PEI" loading="lazy"></div>
         <div class="depo-caption">
           <p class="quote">"Já achei o pedido pra escola... e achei também o de PEI. <mark>Já me ajudou a organizar o que eu preciso levar pra reunião</mark>."</p>
-          <p class="author"><i class="fa-solid fa-circle-check"></i> <b>Maria Lúcia</b> · Mensagem recebida pelo WhatsApp</p>
+          <p class="author"><i class="fa-solid fa-circle-check"><svg class="fai" style="width:1.000em" viewBox="0 0 512 512" aria-hidden="true"><use href="#fa-solid-circle-check"/></svg></i> <b>Maria Lúcia</b> · Mensagem recebida pelo WhatsApp</p>
         </div>
       </div>
 
       <!-- Prova 2: Plano de Saúde e Negativa -->
       <div class="depo-card rv d1">
         <div class="depo-badge">
-          <span><i class="fa-solid fa-file-medical"></i> Plano de Saúde &amp; Negativa por Escrito</span>
-          <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+          <span><i class="fa-solid fa-file-medical"><svg class="fai" style="width:0.750em" viewBox="0 0 384 512" aria-hidden="true"><use href="#fa-solid-file-medical"/></svg></i> Plano de Saúde &amp; Negativa por Escrito</span>
+          <span class="stars"><i class="fa-solid fa-star"><svg class="fai" style="width:1.125em" viewBox="0 0 576 512" aria-hidden="true"><use href="#fa-solid-star"/></svg></i><i class="fa-solid fa-star"><svg class="fai" style="width:1.125em" viewBox="0 0 576 512" aria-hidden="true"><use href="#fa-solid-star"/></svg></i><i class="fa-solid fa-star"><svg class="fai" style="width:1.125em" viewBox="0 0 576 512" aria-hidden="true"><use href="#fa-solid-star"/></svg></i><i class="fa-solid fa-star"><svg class="fai" style="width:1.125em" viewBox="0 0 576 512" aria-hidden="true"><use href="#fa-solid-star"/></svg></i><i class="fa-solid fa-star"><svg class="fai" style="width:1.125em" viewBox="0 0 576 512" aria-hidden="true"><use href="#fa-solid-star"/></svg></i></span>
         </div>
         <div class="depo-img"><img src="assets/depoimento-2.webp" alt="Depoimento Priscilla Oliveira sobre negativa por escrito do plano de saúde" loading="lazy"></div>
         <div class="depo-caption">
           <p class="quote">"Eles só tinham me respondido por telefone e eu não sabia como pedir a negativa por escrito. <mark>Pelo menos agora sei o que escrever</mark>."</p>
-          <p class="author"><i class="fa-solid fa-circle-check"></i> <b>Priscilla Oliveira</b> · Mensagem recebida pelo WhatsApp</p>
+          <p class="author"><i class="fa-solid fa-circle-check"><svg class="fai" style="width:1.000em" viewBox="0 0 512 512" aria-hidden="true"><use href="#fa-solid-circle-check"/></svg></i> <b>Priscilla Oliveira</b> · Mensagem recebida pelo WhatsApp</p>
         </div>
       </div>
 
       <!-- Prova 3: Organização de Laudos e Documentos -->
       <div class="depo-card rv">
         <div class="depo-badge">
-          <span><i class="fa-solid fa-folder-open"></i> Organização de Laudos &amp; Protocolos</span>
-          <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+          <span><i class="fa-solid fa-folder-open"><svg class="fai" style="width:1.125em" viewBox="0 0 576 512" aria-hidden="true"><use href="#fa-solid-folder-open"/></svg></i> Organização de Laudos &amp; Protocolos</span>
+          <span class="stars"><i class="fa-solid fa-star"><svg class="fai" style="width:1.125em" viewBox="0 0 576 512" aria-hidden="true"><use href="#fa-solid-star"/></svg></i><i class="fa-solid fa-star"><svg class="fai" style="width:1.125em" viewBox="0 0 576 512" aria-hidden="true"><use href="#fa-solid-star"/></svg></i><i class="fa-solid fa-star"><svg class="fai" style="width:1.125em" viewBox="0 0 576 512" aria-hidden="true"><use href="#fa-solid-star"/></svg></i><i class="fa-solid fa-star"><svg class="fai" style="width:1.125em" viewBox="0 0 576 512" aria-hidden="true"><use href="#fa-solid-star"/></svg></i><i class="fa-solid fa-star"><svg class="fai" style="width:1.125em" viewBox="0 0 576 512" aria-hidden="true"><use href="#fa-solid-star"/></svg></i></span>
         </div>
         <div class="depo-img"><img src="assets/depoimento-3.webp" alt="Depoimento Cássia sobre organização de documentos e qualidade do material" loading="lazy"></div>
         <div class="depo-caption">
           <p class="quote">"Tava com laudo num lugar, receita em outro e protocolos tudo misturado. <mark>Sem contar com a qualidade do material. Obrigada mesmo!</mark>"</p>
-          <p class="author"><i class="fa-solid fa-circle-check"></i> <b>Cássia - SP</b> · Mensagem recebida pelo WhatsApp</p>
+          <p class="author"><i class="fa-solid fa-circle-check"><svg class="fai" style="width:1.000em" viewBox="0 0 512 512" aria-hidden="true"><use href="#fa-solid-circle-check"/></svg></i> <b>Cássia - SP</b> · Mensagem recebida pelo WhatsApp</p>
         </div>
       </div>
 
       <!-- Prova 4: Celular e Facilidade -->
       <div class="depo-card rv d1">
         <div class="depo-badge">
-          <span><i class="fa-solid fa-mobile-screen"></i> Facilidade de Acesso pelo Celular</span>
-          <span class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+          <span><i class="fa-solid fa-mobile-screen"><svg class="fai" style="width:0.750em" viewBox="0 0 384 512" aria-hidden="true"><use href="#fa-solid-mobile-screen"/></svg></i> Facilidade de Acesso pelo Celular</span>
+          <span class="stars"><i class="fa-solid fa-star"><svg class="fai" style="width:1.125em" viewBox="0 0 576 512" aria-hidden="true"><use href="#fa-solid-star"/></svg></i><i class="fa-solid fa-star"><svg class="fai" style="width:1.125em" viewBox="0 0 576 512" aria-hidden="true"><use href="#fa-solid-star"/></svg></i><i class="fa-solid fa-star"><svg class="fai" style="width:1.125em" viewBox="0 0 576 512" aria-hidden="true"><use href="#fa-solid-star"/></svg></i><i class="fa-solid fa-star"><svg class="fai" style="width:1.125em" viewBox="0 0 576 512" aria-hidden="true"><use href="#fa-solid-star"/></svg></i><i class="fa-solid fa-star"><svg class="fai" style="width:1.125em" viewBox="0 0 576 512" aria-hidden="true"><use href="#fa-solid-star"/></svg></i></span>
         </div>
         <div class="depo-img"><img src="assets/depoimento-4.webp" alt="Depoimento Maria Vitória sobre preenchimento e abertura no celular" loading="lazy"></div>
         <div class="depo-caption">
           <p class="quote">"Consegui abrir os arquivos no celular. <mark>Achei que ia ser complicado, mas o Word abriu certinho</mark>. Vou preencher pelo celular."</p>
-          <p class="author"><i class="fa-solid fa-circle-check"></i> <b>Maria Vitória dos Anjos</b> · Mensagem recebida pelo WhatsApp</p>
+          <p class="author"><i class="fa-solid fa-circle-check"><svg class="fai" style="width:1.000em" viewBox="0 0 512 512" aria-hidden="true"><use href="#fa-solid-circle-check"/></svg></i> <b>Maria Vitória dos Anjos</b> · Mensagem recebida pelo WhatsApp</p>
         </div>
       </div>
     </div>
 
     <!-- Chamada para ação de retorno aos planos -->
     <div style="text-align:center;margin-top:38px" class="rv">
-      <a class="btn go" href="#planos">Quero garantir os direitos do meu filho <i class="fa-solid fa-arrow-right"></i></a>
+      <a class="btn go" href="#planos">Quero garantir os direitos do meu filho <i class="fa-solid fa-arrow-right"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-arrow-right"/></svg></i></a>
       <p style="margin-top:12px;font-size:14px;color:var(--cinza);display:flex;align-items:center;justify-content:center;gap:6px">
-        <i class="fa-solid fa-lock" style="color:var(--teal)"></i> Acesso imediato liberado no seu e-mail
+        <i class="fa-solid fa-lock" style="color:var(--teal)"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-lock"/></svg></i> Acesso imediato liberado no seu e-mail
       </p>
     </div>
   </div>
@@ -604,38 +603,38 @@ footer p{max-width:820px;margin:0 auto 8px}
     <div class="pgrid" style="margin-top:44px">
       <div class="plano rv">
         <h3>Plano Básico</h3>
-        <div class="pimg"><img src="assets/basico.webp" alt="Plano Básico" data-ph="IMG 17 · basico.webp"></div>
+        <div class="pimg"><img loading="lazy" decoding="async" src="assets/basico.webp" alt="Plano Básico" data-ph="IMG 17 · basico.webp"></div>
         <ul>
-          <li><i class="fa-solid fa-check"></i>Kit Direitos do Autista: 40 pedidos prontos</li>
-          <li><i class="fa-solid fa-check"></i>Acesso imediato pela área de membros</li>
+          <li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>Kit Direitos do Autista: 40 pedidos prontos</li>
+          <li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>Acesso imediato pela área de membros</li>
         </ul>
         <p class="de">de <s>R$ 27,90</s> por:</p>
         <div class="preco"><small>R$</small>17,90</div>
         <p class="parc">ou parcelado no cartão</p>
         <span class="eco">Você economiza R$ 10,00</span>
-        <a class="btn sec full" id="btn-basico" href="#">Quero o Básico por R$ 17,90</a><div class="seg seg-card"><span class="seg-pill"><i class="fa-solid fa-lock"></i> <span>Compra 100% segura · <b class="plat">Wiapy</b></span></span><p><i class="fa-regular fa-envelope"></i><span>Pagamento processado pela <b class="plat">Wiapy</b>. Aprovado o pagamento, <b>o acesso chega no seu e-mail</b> na hora.</span></p></div>
+        <a class="btn sec full" id="btn-basico" href="#">Quero o Básico por R$ 17,90</a><div class="seg seg-card"><span class="seg-pill"><i class="fa-solid fa-lock"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-lock"/></svg></i> <span>Compra 100% segura · <b class="plat">Wiapy</b></span></span><p><i class="fa-regular fa-envelope"><svg class="fai" style="width:1.000em" viewBox="0 0 512 512" aria-hidden="true"><use href="#fa-regular-envelope"/></svg></i><span>Pagamento processado pela <b class="plat">Wiapy</b>. Aprovado o pagamento, <b>o acesso chega no seu e-mail</b> na hora.</span></p></div>
       </div>
       <div class="plano top rv d1">
         <div class="ribbon">⚡ MAIS VENDIDO</div>
         <h3 style="margin-top:8px">Plano Completo</h3>
         <span class="dobro">⚡ 2x mais conteúdo</span>
-        <div class="pimg"><img src="assets/completo.webp" alt="Plano Completo" data-ph="IMG 18 · completo.webp"></div>
+        <div class="pimg"><img loading="lazy" decoding="async" src="assets/completo.webp" alt="Plano Completo" data-ph="IMG 18 · completo.webp"></div>
         <ul>
-          <li><i class="fa-solid fa-check"></i>Kit Direitos do Autista: 40 pedidos prontos</li>
-          <li><i class="fa-solid fa-check"></i>Guia de entrega + controle de protocolos</li>
-          <li class="bon"><i class="fa-solid fa-gift"></i>Bônus #1: 200 Pictogramas de Rotina</li>
-          <li class="bon"><i class="fa-solid fa-gift"></i>Bônus #2: Checklist dos Primeiros 30 Dias</li>
-          <li class="bon"><i class="fa-solid fa-gift"></i>Bônus #3: Pasta do Meu Filho</li>
-          <li class="bon"><i class="fa-solid fa-gift"></i>Bônus #4: Frases Prontas para Reunião na Escola</li>
-          <li class="bon"><i class="fa-solid fa-gift"></i>Bônus #5: Planilha de Prazos e Protocolos</li>
-          <li class="bon"><i class="fa-solid fa-gift"></i>Bônus #6: Cartas Prontas para Médico e Terapeutas</li>
+          <li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>Kit Direitos do Autista: 40 pedidos prontos</li>
+          <li><i class="fa-solid fa-check"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-check"/></svg></i>Guia de entrega + controle de protocolos</li>
+          <li class="bon"><i class="fa-solid fa-gift"><svg class="fai" style="width:1.000em" viewBox="0 0 512 512" aria-hidden="true"><use href="#fa-solid-gift"/></svg></i>Bônus #1: 200 Pictogramas de Rotina</li>
+          <li class="bon"><i class="fa-solid fa-gift"><svg class="fai" style="width:1.000em" viewBox="0 0 512 512" aria-hidden="true"><use href="#fa-solid-gift"/></svg></i>Bônus #2: Checklist dos Primeiros 30 Dias</li>
+          <li class="bon"><i class="fa-solid fa-gift"><svg class="fai" style="width:1.000em" viewBox="0 0 512 512" aria-hidden="true"><use href="#fa-solid-gift"/></svg></i>Bônus #3: Pasta do Meu Filho</li>
+          <li class="bon"><i class="fa-solid fa-gift"><svg class="fai" style="width:1.000em" viewBox="0 0 512 512" aria-hidden="true"><use href="#fa-solid-gift"/></svg></i>Bônus #4: Frases Prontas para Reunião na Escola</li>
+          <li class="bon"><i class="fa-solid fa-gift"><svg class="fai" style="width:1.000em" viewBox="0 0 512 512" aria-hidden="true"><use href="#fa-solid-gift"/></svg></i>Bônus #5: Planilha de Prazos e Protocolos</li>
+          <li class="bon"><i class="fa-solid fa-gift"><svg class="fai" style="width:1.000em" viewBox="0 0 512 512" aria-hidden="true"><use href="#fa-solid-gift"/></svg></i>Bônus #6: Cartas Prontas para Médico e Terapeutas</li>
         </ul>
         <p class="de">de <s>R$ 37,90</s> por:</p>
         <div class="preco"><small>R$</small>27,90</div>
         <p class="parc">ou parcelado no cartão</p>
         <span class="eco">Você economiza R$ 10,00</span>
         <a class="btn full ck" data-plano="completo" data-valor="27.90" href="#">Quero o Completo por R$ 27,90</a>
-        <div class="pagto"><span><i class="fa-brands fa-pix"></i>Pix</span><span><i class="fa-solid fa-credit-card"></i>Cartão</span></div><div class="seg seg-card"><span class="seg-pill"><i class="fa-solid fa-lock"></i> <span>Compra 100% segura · <b class="plat">Wiapy</b></span></span><p><i class="fa-regular fa-envelope"></i><span>Pagamento processado pela <b class="plat">Wiapy</b>. Aprovado o pagamento, <b>o acesso chega no seu e-mail</b> na hora.</span></p></div>
+        <div class="pagto"><span><i class="fa-brands fa-pix"><svg class="fai" style="width:1.000em" viewBox="0 0 512 512" aria-hidden="true"><use href="#fa-brands-pix"/></svg></i>Pix</span><span><i class="fa-solid fa-credit-card"><svg class="fai" style="width:1.125em" viewBox="0 0 576 512" aria-hidden="true"><use href="#fa-solid-credit-card"/></svg></i>Cartão</span></div><div class="seg seg-card"><span class="seg-pill"><i class="fa-solid fa-lock"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-lock"/></svg></i> <span>Compra 100% segura · <b class="plat">Wiapy</b></span></span><p><i class="fa-regular fa-envelope"><svg class="fai" style="width:1.000em" viewBox="0 0 512 512" aria-hidden="true"><use href="#fa-regular-envelope"/></svg></i><span>Pagamento processado pela <b class="plat">Wiapy</b>. Aprovado o pagamento, <b>o acesso chega no seu e-mail</b> na hora.</span></p></div>
       </div>
     </div>
   </div>
@@ -643,7 +642,7 @@ footer p{max-width:820px;margin:0 auto 8px}
 
 <!-- 13 · ÂNCORA -->
 <section class="ancora">
-  <div class="wrap"><div class="box rv"><i class="fa-solid fa-circle-check"></i><div><h3>Um único mês de terapia coberto pelo plano vale mais do que o kit inteiro.</h3><p>E os pedidos ficam com você para usar sempre que precisar.</p></div></div></div>
+  <div class="wrap"><div class="box rv"><i class="fa-solid fa-circle-check"><svg class="fai" style="width:1.000em" viewBox="0 0 512 512" aria-hidden="true"><use href="#fa-solid-circle-check"/></svg></i><div><h3>Um único mês de terapia coberto pelo plano vale mais do que o kit inteiro.</h3><p>E os pedidos ficam com você para usar sempre que precisar.</p></div></div></div>
 </section>
 
 <!-- 14 · GARANTIA -->
@@ -690,10 +689,10 @@ footer p{max-width:820px;margin:0 auto 8px}
   <div class="wrap">
     <h2 class="rv">Como é o acesso (passo a passo)</h2>
     <div class="passos" style="margin-top:40px">
-      <div class="passo rv"><i class="fa-solid fa-cart-shopping"></i><h3>Conclua sua compra</h3><p>O acesso é liberado assim que o pagamento é aprovado.</p></div>
-      <div class="passo rv d1"><i class="fa-solid fa-id-card"></i><h3>Entre na área de membros</h3><p>Você recebe o login no e-mail e no WhatsApp.</p></div>
-      <div class="passo rv d2"><i class="fa-solid fa-download"></i><h3>Baixe os arquivos</h3><p>Pedidos em Word e PDF, separados por pasta.</p></div>
-      <div class="passo rv d3"><i class="fa-solid fa-paper-plane"></i><h3>Preencha e envie</h3><p>Coloque os dados do seu filho, imprima ou mande por e-mail e guarde o protocolo.</p></div>
+      <div class="passo rv"><i class="fa-solid fa-cart-shopping"><svg class="fai" style="width:1.125em" viewBox="0 0 576 512" aria-hidden="true"><use href="#fa-solid-cart-shopping"/></svg></i><h3>Conclua sua compra</h3><p>O acesso é liberado assim que o pagamento é aprovado.</p></div>
+      <div class="passo rv d1"><i class="fa-solid fa-id-card"><svg class="fai" style="width:1.125em" viewBox="0 0 576 512" aria-hidden="true"><use href="#fa-solid-id-card"/></svg></i><h3>Entre na área de membros</h3><p>Você recebe o login no e-mail e no WhatsApp.</p></div>
+      <div class="passo rv d2"><i class="fa-solid fa-download"><svg class="fai" style="width:1.000em" viewBox="0 0 512 512" aria-hidden="true"><use href="#fa-solid-download"/></svg></i><h3>Baixe os arquivos</h3><p>Pedidos em Word e PDF, separados por pasta.</p></div>
+      <div class="passo rv d3"><i class="fa-solid fa-paper-plane"><svg class="fai" style="width:1.000em" viewBox="0 0 512 512" aria-hidden="true"><use href="#fa-solid-paper-plane"/></svg></i><h3>Preencha e envie</h3><p>Coloque os dados do seu filho, imprima ou mande por e-mail e guarde o protocolo.</p></div>
     </div>
     <div class="cta rv"><a class="btn go" href="#planos">Quero meu acesso agora</a></div>
   </div>
@@ -714,7 +713,7 @@ footer p{max-width:820px;margin:0 auto 8px}
       <details class="rv"><summary>É assinatura?</summary><div class="ans">Não. É pagamento único, com acesso vitalício.</div></details>
       <details class="rv"><summary>Como funciona a garantia?</summary><div class="ans">Você tem 30 dias, mesmo depois de baixar. É só pedir o reembolso pela <b class="plat">Wiapy</b>, a plataforma de pagamento.</div></details>
     </div>
-    <div class="cta rv"><a class="btn go" href="#planos">Quero o Kit Direitos do Autista</a><div class="seg"><span class="seg-pill"><i class="fa-solid fa-lock"></i> <span>Compra 100% segura · <b class="plat">Wiapy</b></span></span><p><i class="fa-regular fa-envelope"></i><span>Pagamento processado pela <b class="plat">Wiapy</b>, no Pix ou no cartão. Assim que ele é aprovado, <b>a <span class="plat">Wiapy</span> envia o seu acesso para o seu e-mail</b>, com os pedidos em Word e PDF para usar na hora.</span></p></div></div>
+    <div class="cta rv"><a class="btn go" href="#planos">Quero o Kit Direitos do Autista</a><div class="seg"><span class="seg-pill"><i class="fa-solid fa-lock"><svg class="fai" style="width:0.875em" viewBox="0 0 448 512" aria-hidden="true"><use href="#fa-solid-lock"/></svg></i> <span>Compra 100% segura · <b class="plat">Wiapy</b></span></span><p><i class="fa-regular fa-envelope"><svg class="fai" style="width:1.000em" viewBox="0 0 512 512" aria-hidden="true"><use href="#fa-regular-envelope"/></svg></i><span>Pagamento processado pela <b class="plat">Wiapy</b>, no Pix ou no cartão. Assim que ele é aprovado, <b>a <span class="plat">Wiapy</span> envia o seu acesso para o seu e-mail</b>, com os pedidos em Word e PDF para usar na hora.</span></p></div></div>
   </div>
 </section>
 
@@ -804,7 +803,7 @@ footer p{max-width:820px;margin:0 auto 8px}
     var d=document.createElement('div');d.className='ph';
     d.style.cssText=img.getAttribute('style')||'';
     var t=(img.dataset.ph||img.getAttribute('src')).split(' · ');
-    d.innerHTML='<div><i class="fa-regular fa-image" style="font-size:26px;margin-bottom:6px"></i><br>'+t[0]+'<small>'+(t.slice(1).join(' · '))+'</small></div>';
+    d.innerHTML='<div><i class="fa-regular fa-image" style="font-size:26px;margin-bottom:6px"><svg class="fai" style="width:1.000em" viewBox="0 0 512 512" aria-hidden="true"><use href="#fa-regular-image"/></svg></i><br>'+t[0]+'<small>'+(t.slice(1).join(' · '))+'</small></div>';
     if(img.classList.contains('float'))d.classList.add('float'),d.style.minHeight="320px";
     img.replaceWith(d);
   }
